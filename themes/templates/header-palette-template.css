@@ -1,0 +1,41 @@
+/* ══════════════════════════════════════════════════════
+   HEADER PALETTE TEMPLATE
+   Copy the variable names — fill in YOUR values.
+   Derived from src/components/Header.css
+   ── Brand (primary / secondary / beige) ──
+   ══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand (primary / secondary / beige) ── */
+  --p: ;
+  --s: ;
+  --beige: ;
+
+  /* ── Text / muted tones ── */
+  --text: ;
+  --nav-text: ;
+  --muted-2: ;
+
+  /* ── Borders / hairlines ── */
+  --border: ;
+  --border-4: ;
+  --border-5: ;
+
+  /* ── Whites ── */
+  --white: ;
+  --card: ;
+
+  /* ── Greys ── */
+  --grey-3: ;
+
+  /* ── RGBA derived from brand (primary) ── */
+  --p-rgba-09: ;
+  --p-rgba-16: ;
+  --p-rgba-25: ;
+  --p-rgba-28: ;
+  --p-rgba-40: ;
+
+  /* ── RGBA white ── */
+  --white-rgba-20: ;
+  --white-rgba-94: ;
+}

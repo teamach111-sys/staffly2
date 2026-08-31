@@ -1,0 +1,210 @@
+/* ══════════════════════════════════════════════════════
+   HOME PALETTE TEMPLATE
+   Copy the variable names — fill in YOUR values.
+   Derived from src/pages/Home.css
+   ══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand (primary / secondary / beige) ── */
+  --p: ;
+  --s: ;
+  --beige: ;
+
+  /* ── Brand shades & gradient accents ── */
+  --brand-light-1: ;
+  --brand-light-2: ;
+  --brand-deep-1: ;
+  --brand-deep-2: ;
+  --brand-deep-3: ;
+  --brand-deep-4: ;
+
+  /* ── Dark / deep neutral tones ── */
+  --dark: ;
+  --dark-2: ;
+  --dark-3: ;
+  --dark-4: ;
+
+  /* ── Text & muted tones ── */
+  --text: ;
+  --muted: ;
+  --muted-2: ;
+  --muted-3: ;
+  --muted-4: ;
+
+  /* ── Borders / hairlines ── */
+  --border: ;
+  --border-2: ;
+  --border-3: ;
+  --border-4: ;
+  --border-5: ;
+
+  /* ── Whites & background tones ── */
+  --card: ;
+  --white: ;
+  --white-tint-1: ;
+  --white-tint-2: ;
+  --white-tint-3: ;
+  --white-tint-4: ;
+  --white-tint-5: ;
+
+  /* ── Greys ── */
+  --grey-1: ;
+  --grey-2: ;
+  --grey-3: ;
+  --grey-4: ;
+
+  /* ── Status / semantic ── */
+  --success: ;
+  --success-deep: ;
+  --success-light: ;
+  --success-tint: ;
+  --danger: ;
+  --danger-light: ;
+  --danger-tint: ;
+
+  /* ── Brand / social accent colors ── */
+  --accent-orange: ;
+  --accent-orange-deep: ;
+  --accent-orange-soft: ;
+  --accent-orange-soft-2: ;
+  --accent-orange-light: ;
+  --beige-tint: ;
+  --accent-blue: ;
+  --accent-blue-2: ;
+  --accent-blue-3: ;
+  --accent-green: ;
+  --accent-pink: ;
+
+  /* ── Light tint backgrounds ── */
+  --tint-blue: ;
+  --tint-blue-2: ;
+  --tint-blue-3: ;
+  --tint-pink: ;
+
+  /* ── RGBA derived from brand (primary) ── */
+  --p-rgba-05: ;
+  --p-rgba-07: ;
+  --p-rgba-08: ;
+  --p-rgba-09: ;
+  --p-rgba-10: ;
+  --p-rgba-15: ;
+  --p-rgba-16: ;
+  --p-rgba-25: ;
+  --p-rgba-28: ;
+  --p-rgba-30: ;
+  --p-rgba-32: ;
+  --p-rgba-40: ;
+  --p-rgba-42: ;
+
+  /* ── RGBA derived from brand (secondary) ── */
+  --s-rgba-10: ;
+  --s-rgba-11: ;
+  --s-rgba-20: ;
+  --s-rgba-28: ;
+  --s-rgba-50: ;
+
+  /* ── RGBA black ── */
+  --black-rgba-10: ;
+  --black-rgba-12: ;
+  --black-rgba-30: ;
+
+  /* ── RGBA white ── */
+  --white-rgba-05: ;
+  --white-rgba-06: ;
+  --white-rgba-07: ;
+  --white-rgba-08: ;
+  --white-rgba-10: ;
+  --white-rgba-12: ;
+  --white-rgba-15: ;
+  --white-rgba-18: ;
+  --white-rgba-20: ;
+  --white-rgba-28: ;
+  --white-rgba-30: ;
+  --white-rgba-40: ;
+  --white-rgba-45: ;
+  --white-rgba-50: ;
+  --white-rgba-55: ;
+  --white-rgba-60: ;
+  --white-rgba-62: ;
+  --white-rgba-82: ;
+  --white-rgba-94: ;
+
+  /* ── 8-digit hex (with alpha) ── */
+  --accent-blue-3-alpha: ;
+  --accent-blue-2-alpha: ;
+  --accent-pink-alpha: ;
+  --success-alpha: ;
+
+  /* ── Rating / stars ── */
+  --rating-star: ;
+
+  /* ── Hero avatars ── */
+  --avatar-sr: ;
+  --avatar-ma: ;
+  --avatar-jd: ;
+  --avatar-kl: ;
+  --avatar-pb: ;
+
+  /* ── Hero float chips ── */
+  --chip-barista: ;
+  --chip-service: ;
+  --chip-cocktails: ;
+  --chip-gala: ;
+
+  /* ── Hero float icons (bg / fg) ── */
+  --float-ic-ok-bg: ;
+  --float-ic-ok-fg: ;
+  --float-ic-bolt-bg: ;
+  --float-ic-bolt-fg: ;
+
+  /* ── Qualification role badges ── */
+  --qual-barista: ;
+  --qual-chef-cuisine: ;
+  --qual-chef-rang: ;
+  --qual-maitre-hotel: ;
+  --qual-serveur: ;
+  --qual-mixologue: ;
+  --qual-plongeur: ;
+  --qual-runner: ;
+  --qual-chef-partie: ;
+  --qual-commis: ;
+
+  /* ── Prestation / service type tags (accent + bg gradient) ── */
+  --svc-evenementiel: ;
+  --svc-evenementiel-bg: ;
+  --svc-conferences: ;
+  --svc-conferences-bg: ;
+  --svc-restauration: ;
+  --svc-restauration-bg: ;
+  --svc-mariages: ;
+  --svc-mariages-bg: ;
+  --svc-corporate: ;
+  --svc-corporate-bg: ;
+  --svc-animations: ;
+  --svc-animations-bg: ;
+
+  /* ── Feature cards (accent + bg) ── */
+  --feat-1: ;
+  --feat-1-bg: ;
+  --feat-2: ;
+  --feat-2-bg: ;
+  --feat-3: ;
+  --feat-3-bg: ;
+  --feat-4: ;
+  --feat-4-bg: ;
+  --feat-5: ;
+  --feat-5-bg: ;
+  --feat-6: ;
+  --feat-6-bg: ;
+
+  /* ── Ui.jsx (legacy sidebar, unused) ── */
+  --ui-sidebar: ;
+  --ui-sidebar-active: ;
+  --ui-submenu-bg: ;
+
+  /* ── Non-color vars (preserved from original Home.css) ── */
+  --radius: ;
+  --radius-sm: ;
+  --shadow: ;
+  --shadow-lg: ;
+}
