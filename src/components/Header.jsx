@@ -7,8 +7,8 @@ import './Header.css';
 const NAV_LINKS = [
   { label: 'Accueil',          href: '/accueil',          section: 'hero'        },
   { label: 'Prestations',      href: '/accueil#prestations', section: 'prestations' },
-  { label: 'Fonctionnement',   href: '/accueil#steps',       section: 'steps'       },
   { label: 'Services',         href: '/accueil#services',    section: 'services'    },
+  { label: 'Fonctionnement',   href: '/accueil#steps',       section: 'steps'       },
   { label: 'Contact',          href: '/accueil#contact',     section: 'contact'     },
 ];
 
@@ -138,8 +138,8 @@ useEffect(() => {
                 <div className="hdr__dropdown">
                   <p className="hdr__dropdown-title">Je suis…</p>
                   <Link to="/inscription/client" className="hdr__dropdown-item">
-                    <div className="hdr__dropdown-icon" style={{ background: '#fff7ed' }}>
-                      <User size={16} color="#f97316" />
+                    <div className="hdr__dropdown-icon" style={{ background: 'var(--beige-tint)' }}>
+                      <User size={16} color="var(--accent-orange)" />
                     </div>
                     <div>
                       <strong>Client / Entreprise</strong>
@@ -147,8 +147,8 @@ useEffect(() => {
                     </div>
                   </Link>
                   <Link to="/inscription/extra" className="hdr__dropdown-item">
-                    <div className="hdr__dropdown-icon" style={{ background: '#fdf3ee' }}>
-                      <Briefcase size={16} color="#8C3E01" />
+                    <div className="hdr__dropdown-icon" style={{ background: 'var(--beige)' }}>
+                      <Briefcase size={16} color="var(--p)" />
                     </div>
                     <div>
                       <strong>Extra / Freelance</strong>
@@ -183,15 +183,15 @@ useEffect(() => {
             ))}
             <div className="hdr__mobile-sep" />
             <p className="hdr__mobile-label">Rejoindre Staffly</p>
-            <Link to="/inscription/client" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,#8C3E01,#B9622C)' }}>
-              <div className="hdr__mobile-cta-icon"><User size={15} color="#fff" /></div>
+            <Link to="/inscription/client" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,var(--p),var(--accent-orange-deep))' }}>
+              <div className="hdr__mobile-cta-icon"><User size={15} color="var(--white)" /></div>
               <div>
                 <div style={{ fontWeight: 700, fontSize: 13 }}>Client / Entreprise</div>
                 <div style={{ fontSize: 11, opacity: .8 }}>Je cherche du personnel qualifié</div>
               </div>
             </Link>
-            <Link to="/inscription/extra" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,#B9622C,#d4834e)' }}>
-              <div className="hdr__mobile-cta-icon"><Briefcase size={15} color="#fff" /></div>
+            <Link to="/inscription/extra" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft-2))' }}>
+              <div className="hdr__mobile-cta-icon"><Briefcase size={15} color="var(--white)" /></div>
               <div>
                 <div style={{ fontWeight: 700, fontSize: 13 }}>Extra / Freelance</div>
                 <div style={{ fontSize: 11, opacity: .8 }}>Je propose mes services</div>

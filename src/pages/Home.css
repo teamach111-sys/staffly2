@@ -69,6 +69,11 @@
 
   /* ── Brand / social accent colors ── */
   --accent-orange: #f97316;
+  --accent-orange-deep:  #B9622C;
+  --accent-orange-soft:  #d07040;
+  --accent-orange-soft-2:#d4834e;
+  --accent-orange-light: #f0a060;
+  --beige-tint: #fff7ed;
   --accent-blue:   #2563eb;
   --accent-blue-2: #1877f2;
   --accent-blue-3: #0077b5;
@@ -134,6 +139,63 @@
   --accent-pink-alpha:    #e1306c20;   /* instagram border with alpha */
   --success-alpha:        #22c55e88;   /* success dot glow with alpha */
 
+  /* ── Rating / stars ── */
+  --rating-star:  #f59e0b;
+
+  /* ── Hero avatars ── */
+  --avatar-sr:  #7c3d12;
+  --avatar-ma:  #92400e;
+  --avatar-jd:  #b45309;
+  --avatar-kl:  #d97706;
+  --avatar-pb:  #a16207;
+
+  /* ── Hero float chips ── */
+  --chip-barista:    #d97706;
+  --chip-service:    #7c3aed;
+  --chip-cocktails:  #0891b2;
+  --chip-gala:       #be185d;
+
+  /* ── Hero float icons (bg / fg) ── */
+  --float-ic-ok-bg:  #f0fdf4;  --float-ic-ok-fg:  #16a34a;
+  --float-ic-bolt-bg:#eff6ff;  --float-ic-bolt-fg:#2563eb;
+
+  /* ── Qualification role badges ── */
+  --qual-barista:        #d97706;
+  --qual-chef-cuisine:   #dc2626;
+  --qual-chef-rang:      #7c3aed;
+  --qual-maitre-hotel:   #059669;
+  --qual-serveur:        #0891b2;
+  --qual-mixologue:      #9333ea;
+  --qual-plongeur:       #b45309;
+  --qual-runner:         #047857;
+  --qual-chef-partie:    #1d4ed8;
+  --qual-commis:         #0e7490;
+
+  /* ── Prestation / service type tags (accent + bg gradient) ── */
+  --svc-evenementiel:  #7c3aed;  --svc-evenementiel-bg: linear-gradient(135deg,#ede9fe,#ddd6fe);
+  --svc-conferences:   #dc2626;  --svc-conferences-bg:  linear-gradient(135deg,#fee2e2,#fecaca);
+  --svc-restauration:  #059669;  --svc-restauration-bg: linear-gradient(135deg,#d1fae5,#a7f3d0);
+  --svc-mariages:      #be185d;  --svc-mariages-bg:     linear-gradient(135deg,#fce7f3,#fbcfe8);
+  --svc-corporate:     #0891b2;  --svc-corporate-bg:    linear-gradient(135deg,#e0f2fe,#bae6fd);
+  --svc-animations:    #d97706;  --svc-animations-bg:   linear-gradient(135deg,#fef3c7,#fde68a);
+
+  /* ── Feature cards (accent + bg) ── */
+  --feat-1: #7c3aed;  --feat-1-bg: #ede9fe;
+  --feat-2: #0891b2;  --feat-2-bg: #e0f2fe;
+  --feat-3: #059669;  --feat-3-bg: #d1fae5;
+  --feat-4: #d97706;  --feat-4-bg: #fef3c7;
+  --feat-5: #be185d;  --feat-5-bg: #fce7f3;
+  --feat-6: #1d4ed8;  --feat-6-bg: #eff6ff;
+
+  /* ── Ui.jsx (legacy sidebar, unused) ── */
+  --ui-sidebar:        #c4a484;
+  --ui-sidebar-active: #b38b6d;
+  --ui-submenu-bg:     #e0e0e0;
+
+  /* ── RGBA white extras used inline ── */
+  --white-rgba-82: rgba(255,255,255,0.82);
+  --white-rgba-55: rgba(255,255,255,0.55);
+
   /* ---- Non-color vars (preserved from original Home.css) ---- */
   --radius: 18px;
   --radius-sm: 10px;
@@ -154,7 +216,7 @@ body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 11px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.6px; color: var(--s); margin-bottom: 14px;
+  letter-spacing: 1.6px; color: var(--s); margin-bottom: 16px;
 }
 .eyebrow::before {
   content: ''; display: block; width: 20px; height: 2px;
@@ -162,9 +224,9 @@ body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--
   border-radius: 2px;
 }
 .h2 {
-  font-size: clamp(30px, 4.5vw, 50px); font-weight: 900;
-  letter-spacing: -1.4px; line-height: 1.07; color: var(--text);
-  margin-bottom: 18px;
+  font-size: 32px; font-weight: 500;
+  letter-spacing: -1.4px; line-height: 1.2; color: var(--text);
+  margin-bottom: 8px;
 }
 .h2 .accent {
   background: linear-gradient(135deg, var(--p), var(--s));
@@ -331,7 +393,7 @@ body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--
 }
 .pres-card__tag { padding: 4px 12px; border-radius: 20px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--white); backdrop-filter: blur(8px); background: var(--black-rgba-30); }
 .pres-card__body { padding: 22px; }
-.pres-card__title { font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+.pres-card__title { font-size: 28px; font-weight: 500; color: var(--text); line-height: 1.2; margin-bottom: 8px; }
 .pres-card__desc { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
 .pres-card__profiles { display: flex; flex-wrap: wrap; gap: 5px; }
 
@@ -342,8 +404,8 @@ body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--
 .feat { padding: 32px 28px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--border); transition: .22s; }
 .feat:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
 .feat__icon { width: 52px; height: 52px; border-radius: 14px; background: var(--beige); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 1px solid var(--border); }
-.feat__title { font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 10px; }
-.feat__desc { font-size: 13.5px; color: var(--muted); line-height: 1.68; }
+.feat__title { font-size: 28px; font-weight: 500; color: var(--text); line-height: 1.2; margin-bottom: 8px; }
+.feat__desc { font-size: 13.5px; color: var(--muted); line-height: 1.68; margin-bottom: 16px; }
 
 /* ══════════════════════════════════════════════
    HOW IT WORKS (Timeline)
@@ -386,7 +448,7 @@ body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--
 .numbers__mini-v { font-size: 24px; font-weight: 900; color: var(--white); letter-spacing: -.5px; }
 .numbers__mini-l { font-size: 11px; color: var(--white-rgba-45); margin-top: 4px; }
 .numbers__content { padding: 20px 0; }
-.numbers__list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+.numbers__list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
 .numbers__li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--muted); line-height: 1.6; }
 .numbers__li-icon { width: 22px; height: 22px; border-radius: 50%; background: linear-gradient(135deg,var(--p),var(--s)); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
 
@@ -397,7 +459,7 @@ body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--
 .testi { background: var(--white); border-radius: var(--radius); padding: 32px 28px; border: 1px solid var(--border); transition: .22s; position: relative; }
 .testi:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
 .testi__quote { font-size: 40px; line-height: 1; color: var(--border); margin-bottom: 14px; font-family: Georgia, serif; }
-.testi__text { font-size: 14.5px; color: var(--dark-3); line-height: 1.78; margin-bottom: 26px; }
+.testi__text { font-size: 14.5px; color: var(--dark-3); line-height: 1.78; margin-bottom: 16px; }
 .testi__author { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid var(--border-5); }
 .testi__av { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg,var(--p),var(--s)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 14px; font-weight: 800; flex-shrink: 0; }
 .testi__name { font-size: 14px; font-weight: 700; color: var(--text); }

@@ -13,8 +13,8 @@ export const SidebarButton = ({ label, active, onClick, children }) => {
                 onClick={onClick}
                 style={{
                     padding: '12px',
-                    backgroundColor: active || isHovered ? '#b38b6d' : '#c4a484',
-                    color: 'white',
+                    backgroundColor: active || isHovered ? 'var(--ui-sidebar-active)' : 'var(--ui-sidebar)',
+                    color: 'var(--white)',
                     border: 'none',
                     cursor: 'pointer',
                     fontWeight: 'bold',
@@ -33,15 +33,15 @@ export const SidebarButton = ({ label, active, onClick, children }) => {
                     position: 'absolute',
                     left: '100%',
                     top: '0',
-                    backgroundColor: '#e0e0e0',
+                    backgroundColor: 'var(--ui-submenu-bg)',
                     padding: '5px',
-                    boxShadow: '4px 0px 10px rgba(0,0,0,0.1)',
+                    boxShadow: '4px 0px 10px var(--black-rgba-10)',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '5px',
                     zIndex: 100,
                     minWidth: '200px',
-                    borderLeft: '2px solid black'
+                    borderLeft: '2px solid var(--dark)'
                 }}>
                     {children}
                 </div>
@@ -55,8 +55,8 @@ export const SubMenuButton = ({ label, onClick }) => (
         onClick={onClick}
         style={{
             padding: '10px',
-            backgroundColor: '#b38b6d',
-            color: 'white',
+            backgroundColor: 'var(--ui-sidebar-active)',
+            color: 'var(--white)',
             border: 'none',
             cursor: 'pointer',
             fontSize: '13px',
@@ -72,7 +72,7 @@ export const SpaceSelector = ({ spaces, onSelect, currentSpace }) => (
     <select 
         value={currentSpace?.id || ''} 
         onChange={(e) => onSelect(spaces.find(s => s.id == e.target.value))}
-        style={{ width: '100%', padding: '10px', marginBottom: '20px', border: '1px solid #b38b6d', cursor: 'pointer' }}
+        style={{ width: '100%', padding: '10px', marginBottom: '20px', border: '1px solid var(--ui-sidebar-active)', cursor: 'pointer' }}
     >
         {spaces?.map(space => (
             <option key={space.id} value={space.id}>{space.city} - {space.space_name}</option>

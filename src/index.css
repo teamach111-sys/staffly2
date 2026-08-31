@@ -12,8 +12,8 @@ body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #fff;
-  color: #1a0800;
+  background: var(--card);
+  color: var(--text);
 }
 a {
   text-decoration: none;

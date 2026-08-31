@@ -85,15 +85,15 @@ function StatNum({ value, suffix = '', active }) {
 function StarRow() {
   return (
     <div className="hero__stars">
-      {[1,2,3,4,5].map(i => <FontAwesomeIcon key={i} icon={faStar} style={{ width:13, height:13, color:'#f59e0b' }} />)}
+      {[1,2,3,4,5].map(i => <FontAwesomeIcon key={i} icon={faStar} style={{ width:13, height:13, color:'var(--rating-star)' }} />)}
     </div>
   );
 }
 
-function CheckIcon({ color = '#8C3E01' }) {
+function CheckIcon({ color = 'var(--p)' }) {
   return (
-    <div className="forwho__check" style={{ background: color }}>
-      <FontAwesomeIcon icon={faCircleCheck} style={{ width:10, height:10, color:'#fff' }} />
+    <div style={{ background: color, marginTop: 1, width: 21, height: 21, borderRadius: '50%', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <FontAwesomeIcon icon={faCircleCheck} style={{ width:10, height:10, color:'var(--white)' }} />
     </div>
   );
 }
@@ -142,68 +142,68 @@ export default function Home() {
 
   /* Qualifications */
   const QUALS = [
-    ['Barista','#d97706'],
-    ['Chef de cuisine','#dc2626'],
-    ['Chef de rang','#7c3aed'],
-    ["Maître d'hôtel",'#059669'],
-    ['Serveur','#0891b2'],
-    ['Mixologue','#9333ea'],
-    ['Plongeur','#b45309'],
-    ['Runner','#047857'],
-    ['Chef de partie ','#1d4ed8'],
-    ['Commis de cuisine','#0e7490'],
-     ['Barista','#d97706'],
-    ['Chef de cuisine','#dc2626'],
-    ['Chef de rang','#7c3aed'],
-    ["Maître d'hôtel",'#059669'],
-    ['Serveur','#0891b2'],
-    ['Mixologue','#9333ea'],
-    ['Plongeur','#b45309'],
-    ['Runner','#047857'],
-    ['Chef de partie ','#1d4ed8'],
-    ['Commis de cuisine','#0e7490'],
+    ['Barista','var(--qual-barista)'],
+    ['Chef de cuisine','var(--qual-chef-cuisine)'],
+    ['Chef de rang','var(--qual-chef-rang)'],
+    ["Maître d'hôtel",'var(--qual-maitre-hotel)'],
+    ['Serveur','var(--qual-serveur)'],
+    ['Mixologue','var(--qual-mixologue)'],
+    ['Plongeur','var(--qual-plongeur)'],
+    ['Runner','var(--qual-runner)'],
+    ['Chef de partie ','var(--qual-chef-partie)'],
+    ['Commis de cuisine','var(--qual-commis)'],
+     ['Barista','var(--qual-barista)'],
+    ['Chef de cuisine','var(--qual-chef-cuisine)'],
+    ['Chef de rang','var(--qual-chef-rang)'],
+    ["Maître d'hôtel",'var(--qual-maitre-hotel)'],
+    ['Serveur','var(--qual-serveur)'],
+    ['Mixologue','var(--qual-mixologue)'],
+    ['Plongeur','var(--qual-plongeur)'],
+    ['Runner','var(--qual-runner)'],
+    ['Chef de partie ','var(--qual-chef-partie)'],
+    ['Commis de cuisine','var(--qual-commis)'],
   ];
 
   /* Prestation types */
   const PRESTATIONS = [
     {
       icon: <FontAwesomeIcon icon={faMartiniGlass} style={{ width:28, height:28 }} />,
-      color:'#7c3aed', bg:'linear-gradient(135deg,#ede9fe,#ddd6fe)', tag:'Événementiel',
+      color:'var(--svc-evenementiel)', bg:'var(--svc-evenementiel-bg)', tag:'Événementiel',
       title:'Barista & Coffee Corner',
       desc:"Barista qualifiés pour animer vos espaces café, Coffee breaks et bar à café.  Service de boissons chaudes, accueil des invités et expérience prenium tout au long de votre évènement. ",
       profiles:['Barista', 'Runner', ' Serveur '],
     },
     {
       icon: <FontAwesomeIcon icon={faChalkboardUser} style={{ width:28, height:28 }} />,
-      color:'#dc2626', bg:'linear-gradient(135deg,#fee2e2,#fecaca)', tag:'Conférences',
+      color:'var(--svc-conferences)', bg:'var(--svc-conferences-bg)', tag:'Conférences',
       title:'Mixologues et bars à cocktails ',
       desc:"Mixologues et bartenders expérimentés pour vos événements, soirées privées et réceptions. Création de cocktails avec ou sans alcool, animations de bar et service haut de gamme. ",
       profiles:['Mixologue', 'Barman', 'Serveur '],
     },
     {
       icon: <FontAwesomeIcon icon={faUtensils} style={{ width:28, height:28 }} />,
-      color:'#059669', bg:'linear-gradient(135deg,#d1fae5,#a7f3d0)', tag:'Restauration',
+      color:'var(--svc-restauration)', bg:'var(--svc-restauration-bg)', tag:'Restauration',
       title:'Restauration & Traiteurs',
       desc:"Renfort de salle et cuisine pour vos restaurants, traiteurs et services de banquet. Serveurs, barmans, plongeurs, runners et chefs de partie disponibles sur des créneaux précis.",
       profiles:['Serveur','Barman','Cuisinier','Runner'],
     },
     {
       icon: <FontAwesomeIcon icon={faHeart} style={{ width:28, height:28 }} />,
-      color:'#be185d', bg:'linear-gradient(135deg,#fce7f3,#fbcfe8)', tag:'Mariages',
+      color:'var(--svc-mariages)', bg:'var(--svc-mariages-bg)', tag:'Mariages',
       title:'Mariages & Célébrations',
       desc:"Équipes complètes pour rendre votre événement inoubliable. Coordination du service, accueil des invités, service à table, barmans pour vos cocktails et animations.",
       profiles:['Coordinateur','Serveur','Barman','Hôtesse'],
     },
     {
       icon: <FontAwesomeIcon icon={faBuilding} style={{ width:28, height:28 }} />,
-      color:'#0891b2', bg:'linear-gradient(135deg,#e0f2fe,#bae6fd)', tag:'Corporate',
+      color:'var(--svc-corporate)', bg:'var(--svc-corporate-bg)', tag:'Corporate',
       title:"Événements d'entreprise",
       desc:"Séminaires, team buildings, lancements de produit : personnel polyvalent pour assurer la logistique, l'accueil et le service de vos événements professionnels.",
       profiles:['Hôte accueil','Service','Logistique'],
     },
     {
       icon: <FontAwesomeIcon icon={faChampagneGlasses} style={{ width:28, height:28 }} />,
-      color:'#d97706', bg:'linear-gradient(135deg,#fef3c7,#fde68a)', tag:'Animations',
+      color:'var(--svc-animations)', bg:'var(--svc-animations-bg)', tag:'Animations',
       title:'Cocktails & Animations',
       desc:"Barmans créatifs, animateurs dynamiques et équipes de service pour vos cocktails dinatoires, inaugurations, afterworks et soirées d'entreprise festives.",
       profiles:['Barman','Animateur','Serveur'],
@@ -264,7 +264,7 @@ export default function Home() {
               </div>
               <div className="hero__proof">
                 <div className="hero__avatars">
-                  {[['SR','#7c3d12'],['MA','#92400e'],['JD','#b45309'],['KL','#d97706'],['PB','#a16207']].map(([s,c],i) => (
+                  {[['SR','var(--avatar-sr)'],['MA','var(--avatar-ma)'],['JD','var(--avatar-jd)'],['KL','var(--avatar-kl)'],['PB','var(--avatar-pb)']].map(([s,c],i) => (
                     <div key={i} className="hero__av" style={{ background: c, zIndex: 5-i }}>{s}</div>
                   ))}
                 </div>
@@ -297,18 +297,18 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="hero__chips">
-                  {[['Barista','#d97706'],['Service','#7c3aed'],['Cocktails','#0891b2'],['Gala','#be185d']].map(([l,c])=>(
-                    <span key={l} className="chip" style={{background:c+'18',color:c,border:`1px solid ${c}28`}}>{l}</span>
+                  {[['Barista','var(--chip-barista)'],['Service','var(--chip-service)'],['Cocktails','var(--chip-cocktails)'],['Gala','var(--chip-gala)']].map(([l,c])=>(
+                    <span key={l} className="chip" style={{background:`color-mix(in srgb, ${c} 9.4%, transparent)`,color:c,border:`1px solid color-mix(in srgb, ${c} 15.7%, transparent)`}}>{l}</span>
                   ))}
                 </div>
               </div>
 
               <div className="hero__float hero__float--tl">
-                <div className="hero__float-ic" style={{background:'#f0fdf4',color:'#16a34a'}}>✓</div>
+                <div className="hero__float-ic" style={{background:'var(--float-ic-ok-bg)',color:'var(--float-ic-ok-fg)'}}>✓</div>
                 <div><strong>Prestation pourvue</strong><span>en 12 minutes</span></div>
               </div>
               <div className="hero__float hero__float--bl">
-                <div className="hero__float-ic" style={{background:'#eff6ff',color:'#2563eb'}}>⚡</div>
+                <div className="hero__float-ic" style={{background:'var(--float-ic-bolt-bg)',color:'var(--float-ic-bolt-fg)'}}>⚡</div>
                 <div><strong>Réponse garantie</strong><span>sous 15 minutes</span></div>
               </div>
             </div>
@@ -321,7 +321,7 @@ export default function Home() {
         <p className="ticker__label">Qualifications disponibles sur Staffly</p>
         <div className="ticker__track">
           {[...QUALS, ...QUALS].map(([l, c], i) => (
-            <span key={i} className="chip" style={{ background: c+'18', color: c, border: `1px solid ${c}28`, padding:'8px 18px', fontSize:13 }}>{l}</span>
+            <span key={i} className="chip" style={{ background: `color-mix(in srgb, ${c} 9.4%, transparent)`, color: c, border: `1px solid color-mix(in srgb, ${c} 15.7%, transparent)`, padding:'8px 18px', fontSize:13 }}>{l}</span>
           ))}
         </div>
       </div>
@@ -369,7 +369,7 @@ export default function Home() {
                   <p className="pres-card__desc">{p.desc}</p>
                   <div className="pres-card__profiles">
                     {p.profiles.map(pr => (
-                      <span key={pr} className="chip" style={{background:p.color+'14',color:p.color,border:`1px solid ${p.color}22`,fontSize:11,padding:'3px 10px'}}>{pr}</span>
+                      <span key={pr} className="chip" style={{background:`color-mix(in srgb, ${p.color} 8%, transparent)`,color:p.color,border:`1px solid color-mix(in srgb, ${p.color} 13.3%, transparent)`,fontSize:11,padding:'3px 10px'}}>{pr}</span>
                     ))}
                   </div>
                 </div>
@@ -380,7 +380,7 @@ export default function Home() {
       </section>
 
       {/* ══════ WHY Staffly (Features) ══════ */}
-      <section className="section" ref={featRef}>
+      <section className="section section--alt" ref={featRef}>
         <div className="container">
           <div className={`section-head section-head--center fade-up${featVis?' visible':''}`}>
             <p className="eyebrow">Pourquoi Staffly</p>
@@ -389,38 +389,38 @@ export default function Home() {
           <div className="features__grid">
             {[
               {
-                color:'#7c3aed', bg:'#ede9fe',
-                icon:<FontAwesomeIcon icon={faCircleCheck} style={{ width:22, height:22, color:'#7c3aed' }} />,
+                color:'var(--feat-1)', bg:'var(--feat-1-bg)',
+                icon:<FontAwesomeIcon icon={faCircleCheck} style={{ width:22, height:22, color:'var(--feat-1)' }} />,
                 title:'Profils 100% vérifiés',
                 desc:"Chaque extra passe par notre processus de validation complet : identité, documents professionnels, références et entretien. Aucun profil non conforme n'apparaît dans vos recherches.",
               },
               {
-                color:'#0891b2', bg:'#e0f2fe',
-                icon:<FontAwesomeIcon icon={faClock} style={{ width:22, height:22, color:'#0891b2' }} />,
+                color:'var(--feat-2)', bg:'var(--feat-2-bg)',
+                icon:<FontAwesomeIcon icon={faClock} style={{ width:22, height:22, color:'var(--feat-2)' }} />,
                 title:'Réactivité en temps réel',
                 desc:'Déposez votre prestation et recevez des candidatures en quelques minutes. Notre algorithme de matching géolocalise et notifie instantanément les extras correspondant à votre besoin.',
               },
               {
-                color:'#059669', bg:'#d1fae5',
-                icon:<FontAwesomeIcon icon={faCalendarDays} style={{ width:22, height:22, color:'#059669' }} />,
+                color:'var(--feat-3)', bg:'var(--feat-3-bg)',
+                icon:<FontAwesomeIcon icon={faCalendarDays} style={{ width:22, height:22, color:'var(--feat-3)' }} />,
                 title:'Gestion simplifiée',
                 desc:'Planning, suivi des candidatures, validation du staffing, évaluations post-prestation : tout est centralisé dans un tableau de bord intuitif.',
               },
               {
-                color:'#d97706', bg:'#fef3c7',
-                icon:<FontAwesomeIcon icon={faStar} style={{ width:22, height:22, color:'#d97706' }} />,
+                color:'var(--feat-4)', bg:'var(--feat-4-bg)',
+                icon:<FontAwesomeIcon icon={faStar} style={{ width:22, height:22, color:'var(--feat-4)' }} />,
                 title:'Système de notation',
                 desc:"Après chaque prestation, nous permettons aux clients d’évaluer les extras avec qui nous les avons mis en relation. Ce système garantit la qualité des profils et la fiabilité des partenaires sur la durée. ",
               },
               {
-                color:'#be185d', bg:'#fce7f3',
-                icon:<FontAwesomeIcon icon={faShieldHalved} style={{ width:22, height:22, color:'#be185d' }} />,
+                color:'var(--feat-5)', bg:'var(--feat-5-bg)',
+                icon:<FontAwesomeIcon icon={faShieldHalved} style={{ width:22, height:22, color:'var(--feat-5)' }} />,
                 title:'Sécurité juridique',
                 desc:'Staffly vérifie la conformité de chaque extra (documents légaux, assurance, documents d’identité) ',
               },
               {
-                color:'#1d4ed8', bg:'#eff6ff',
-                icon:<FontAwesomeIcon icon={faHeadset} style={{ width:22, height:22, color:'#1d4ed8' }} />,
+                color:'var(--feat-6)', bg:'var(--feat-6-bg)',
+                icon:<FontAwesomeIcon icon={faHeadset} style={{ width:22, height:22, color:'var(--feat-6)' }} />,
                 title:'Support dédié',
                 desc:'Notre équipe accompagne chaque client et chaque extra. Chat en ligne, assistance téléphonique et suivi personnalisé pour que chaque prestation soit un succès.',
               },
@@ -467,7 +467,7 @@ export default function Home() {
       </section>
 
       {/* ══════ NUMBERS (Client side) ══════ */}
-      <section className="section" ref={numRef}>
+      <section className="section section--alt" ref={numRef}>
         <div className="container">
           <div className={`numbers fade-up${numVis?' visible':''}`}>
             <div className="numbers__visual">
@@ -497,7 +497,7 @@ export default function Home() {
                 ].map((t,i)=>(
                   <li key={i} className="numbers__li">
                     <div className="numbers__li-icon">
-                      <FontAwesomeIcon icon={faCircleCheck} style={{ width:10, height:10, color:'#fff' }} />
+      <FontAwesomeIcon icon={faCircleCheck} style={{ width:10, height:10, color:'var(--white)' }} />
                     </div>
                     {t}
                   </li>
@@ -518,35 +518,35 @@ export default function Home() {
           </div>
           <div className={`forwho fade-up${fwVis?' visible':''}`} style={{transitionDelay:'.1s'}}>
             <div className="forwho__card forwho__card--light">
-              <span className="forwho__chip" style={{background:'#8C3E01',color:'#fff'}}>Entreprises & Clients</span>
+              <span className="forwho__chip" style={{background:'var(--p)',color:'var(--white)'}}>Entreprises & Clients</span>
               <h3 className="forwho__h3" style={{color:'var(--text)'}}>Renforcez vos équipes à la demande</h3>
               <p className="forwho__p" style={{color:'var(--muted)'}}>Accédez à un vivier de profils vérifiés, disponibles en temps réel dans votre ville. Créez votre prestation en 2 minutes et recevez des candidatures qualifiées sans effort.</p>
               <ul className="forwho__list">
                 {['Profils vérifiés par notre équipe','Disponibilité en temps réel dans votre zone','Gestion administrative et facturation simplifiée','Suivi des prestations et évaluations croisées','Historique complet des collaborations'].map((t,i)=>(
-                  <li key={i} className="forwho__li"><CheckIcon color="#8C3E01" /><span style={{color:'var(--text)'}}>{t}</span></li>
+                  <li key={i} className="forwho__li"><CheckIcon color="var(--p)" /><span style={{color:'var(--text)'}}>{t}</span></li>
                 ))}
               </ul>
               <Link to="/inscription/client" className="btn btn-primary">Créer un compte client <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></Link>
-              <div className="forwho__bg-circle" style={{background:'#8C3E01'}} />
+              <div className="forwho__bg-circle" style={{background:'var(--p)'}} />
             </div>
             <div className="forwho__card forwho__card--dark">
-              <span className="forwho__chip" style={{background:'rgba(185,98,44,0.28)',color:'#f0a060'}}>EXTRAS & AUTO ENTREPRENEURS </span>
-              <h3 className="forwho__h3" style={{color:'#fff'}}>Des prestations qui correspondent à votre profil</h3>
-              <p className="forwho__p" style={{color:'rgba(255,255,255,0.55)'}}>Gérez vos indisponibilités, recevez des offres ciblées selon vos qualifications, construisez votre réputation et augmentez vos revenus en toute flexibilité.</p>
+              <span className="forwho__chip" style={{background:'var(--p-rgba-28)',color:'var(--accent-orange-light)'}}>EXTRAS & AUTO ENTREPRENEURS </span>
+              <h3 className="forwho__h3" style={{color:'var(--white)'}}>Des prestations qui correspondent à votre profil</h3>
+              <p className="forwho__p" style={{color:'var(--white-rgba-55)'}}>Gérez vos indisponibilités, recevez des offres ciblées selon vos qualifications, construisez votre réputation et augmentez vos revenus en toute flexibilité.</p>
               <ul className="forwho__list">
                 {['Prestations géolocalisées près de chez vous','Disponible par défaut — marquez juste vos indisponibilités','Paiement rapide et suivi de facturation intégré','Accès prioritaire aux prestations urgentes'].map((t,i)=>(
-                  <li key={i} className="forwho__li"><CheckIcon color="#B9622C" /><span style={{color:'rgba(255,255,255,0.82)'}}>{t}</span></li>
+                  <li key={i} className="forwho__li"><CheckIcon color="var(--accent-orange-deep)" /><span style={{color:'var(--white-rgba-82)'}}>{t}</span></li>
                 ))}
               </ul>
-              <Link to="/inscription/extra" className="btn btn-primary" style={{background:'linear-gradient(135deg,#B9622C,#d07040)'}}>Devenir extra <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></Link>
-              <div className="forwho__bg-circle" style={{background:'#fff'}} />
+              <Link to="/inscription/extra" className="btn btn-primary" style={{background:'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft))'}}>Devenir extra <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></Link>
+              <div className="forwho__bg-circle" style={{background:'var(--white)'}} />
             </div>
           </div>
         </div>
       </section>
 
       {/* ══════ TESTIMONIALS ══════ */}
-      <section className="section" ref={testiRef}>
+      <section className="section section--alt" ref={testiRef}>
         <div className="container">
           <div className={`section-head section-head--center fade-up${testiVis?' visible':''}`}>
             <p className="eyebrow">Témoignages</p>
@@ -559,7 +559,7 @@ export default function Home() {
               { text:"La transparence sur les profils, le système d'évaluation croisée, la rapidité de traitement des urgences… Staffly est devenu l'outil central de notre agence événementielle. Le ROI est immédiat.", name:'Lucie Martin', role:'Directrice · Events & Co Bordeaux', init:'LM', stars:5 },
             ].map((t, i) => (
               <div key={i} className={`testi fade-up${testiVis?' visible':''} delay-${i+1}`}>
-                <div className="testi__stars">{Array(t.stars).fill(null).map((_,k)=><FontAwesomeIcon key={k} icon={faStar} style={{ width:14, height:14, color:'#f59e0b' }} />)}</div>
+                <div className="testi__stars">{Array(t.stars).fill(null).map((_,k)=><FontAwesomeIcon key={k} icon={faStar} style={{ width:14, height:14, color:'var(--rating-star)' }} />)}</div>
                 <div className="testi__quote">"</div>
                 <p className="testi__text">{t.text}</p>
                 <div className="testi__author">
@@ -747,7 +747,7 @@ export default function Home() {
         <div className="container">
           <div className="footer__grid">
             <div>
-              <div className="footer__logo">Book<em>ly</em></div>
+              <div className="footer__logo">Staff<em>ly</em></div>
               <p className="footer__tagline">La plateforme de placement d’auto-entrepreuneurs qui connecte entreprise et extras qualifiés. </p>
               
             </div>
@@ -779,8 +779,8 @@ export default function Home() {
           <div className="footer__bottom">
             <span className="footer__copy">© {new Date().getFullYear()} <a href="https://cleverix.ma/" target="_blank" rel="noreferrer" style={{color:'inherit',textDecoration:'underline'}}>Cleverix</a> · Tous droits réservés · Paris, France</span>
             <div className="footer__legal">
-              <span style={{fontSize:'12.5px',color:'rgba(255,255,255,0.28)',display:'flex',alignItems:'center',gap:6}}>
-                <span style={{width:6,height:6,borderRadius:'50%',background:'#22c55e',display:'inline-block'}}/>
+<span style={{fontSize:'12.5px',color:'var(--white-rgba-28)',display:'flex',alignItems:'center',gap:6}}>
+<span style={{width:6,height:6,borderRadius:'50%',background:'var(--success)',display:'inline-block'}}/>
                 Tous les systèmes opérationnels
               </span>
             </div>

@@ -4,8 +4,8 @@ import Home from './pages/Home.jsx'
 function Placeholder({ title }) {
   return (
     <div style={{ padding: '120px 28px', textAlign: 'center', fontFamily: 'Inter, system-ui, sans-serif' }}>
-      <h1 style={{ fontSize: 32, fontWeight: 900, color: '#8C3E01', marginBottom: 12 }}>{title}</h1>
-      <p style={{ color: '#6b3a1a' }}>
+      <h1 style={{ fontSize: 32, fontWeight: 900, color: 'var(--p)', marginBottom: 12 }}>{title}</h1>
+      <p style={{ color: 'var(--muted)' }}>
         Cette page est en cours de construction. Naviguez vers l'accueil pour explorer la plateforme.
       </p>
     </div>
