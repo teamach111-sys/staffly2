@@ -135,7 +135,7 @@ export default function Home() {
       setFormStatus('ok');
       setForm({ name:'', email:'', subject:'', message:'', type:'client' });
     } catch {
-      window.location.href = `mailto:aithmidine.mouad@gmail.com?subject=${encodeURIComponent(form.subject || 'Contact Bookly')}&body=${encodeURIComponent(`De : ${form.name} (${form.email})\nType : ${form.type}\n\n${form.message}`)}`;
+      window.location.href = `mailto:aithmidine.mouad@gmail.com?subject=${encodeURIComponent(form.subject || 'Contact Staffly')}&body=${encodeURIComponent(`De : ${form.name} (${form.email})\nType : ${form.type}\n\n${form.message}`)}`;
       setFormStatus('ok');
     }
   };
@@ -251,7 +251,7 @@ export default function Home() {
                 <span className="hero__h1-line hero__h1-accent">partout en France.</span>
               </h1>
               <p className="hero__sub">
-                Bookly connecte en temps réel les entreprises avec des extras qualifiés et vérifiés.  Déposez votre prestation et recevez des candidatures en quelques minutes. 
+                Staffly connecte en temps réel les entreprises avec des extras qualifiés et vérifiés.  Déposez votre prestation et recevez des candidatures en quelques minutes. 
               </p>
               <div className="hero__ctas">
                 <Link to="/inscription/client" className="btn btn-primary btn--lg">
@@ -318,7 +318,7 @@ export default function Home() {
 
       {/* ══════ QUALIFICATIONS TICKER ══════ */}
       <div className="ticker">
-        <p className="ticker__label">Qualifications disponibles sur Bookly</p>
+        <p className="ticker__label">Qualifications disponibles sur Staffly</p>
         <div className="ticker__track">
           {[...QUALS, ...QUALS].map(([l, c], i) => (
             <span key={i} className="chip" style={{ background: c+'18', color: c, border: `1px solid ${c}28`, padding:'8px 18px', fontSize:13 }}>{l}</span>
@@ -352,7 +352,7 @@ export default function Home() {
             <p className="eyebrow">Types de prestations</p>
             <h2 className="h2">Pour chaque événement,<br/>les bons <span className="accent">profils</span></h2>
             <p className="section-lead">
-              Bookly couvre l’ensemble du secteur événementiel et de la restauration. 
+              Staffly couvre l’ensemble du secteur événementiel et de la restauration. 
               <br/>
               Quels que soient vos besoins, nous avons les profils qualifiés pour votre prestation. 
             </p>
@@ -379,11 +379,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════ WHY Bookly (Features) ══════ */}
+      {/* ══════ WHY Staffly (Features) ══════ */}
       <section className="section" ref={featRef}>
         <div className="container">
           <div className={`section-head section-head--center fade-up${featVis?' visible':''}`}>
-            <p className="eyebrow">Pourquoi Bookly</p>
+            <p className="eyebrow">Pourquoi Staffly</p>
             <h2 className="h2">La plateforme pensée pour<br/>les <span className="accent">professionnels</span> de l'événement</h2>
           </div>
           <div className="features__grid">
@@ -416,7 +416,7 @@ export default function Home() {
                 color:'#be185d', bg:'#fce7f3',
                 icon:<FontAwesomeIcon icon={faShieldHalved} style={{ width:22, height:22, color:'#be185d' }} />,
                 title:'Sécurité juridique',
-                desc:'Bookly vérifie la conformité de chaque extra (documents légaux, assurance, documents d’identité) ',
+                desc:'Staffly vérifie la conformité de chaque extra (documents légaux, assurance, documents d’identité) ',
               },
               {
                 color:'#1d4ed8', bg:'#eff6ff',
@@ -441,7 +441,7 @@ export default function Home() {
           <div className={`section-head section-head--center fade-up${stepsVis?' visible':''}`}>
             <p className="eyebrow">Fonctionnement</p>
             <h2 className="h2">
-            De la création de vos accès Bookly à <br/> votre <span className="accent">évènement</span> en 6 étapes 
+            De la création de vos accès Staffly à <br/> votre <span className="accent">évènement</span> en 6 étapes 
             </h2>
             <p className="section-lead">
               Un processus clair et rapide, du premier contact jusqu’à la fin de la prestation
@@ -450,9 +450,9 @@ export default function Home() {
           <div className={`steps-timeline fade-up${stepsVis?' visible':''}`} style={{transitionDelay:'.1s'}}>
             {[
               { n:1, title:'PREMIER CONTACT CLIENT', desc:'Appel téléphonique pour comprendre les besoins, définir les tarifs et mettre en place l’organisation. ' },
-              { n:2, title:'PLATEFORME BOOKLY ', desc:"Création d'un compte administrateur client sur la plateforme Bookly Agency (accessible sur ordinateur et téléphone)." },
+              { n:2, title:'PLATEFORME STAFFLY ', desc:"Création d'un compte administrateur client sur la plateforme Staffly Agency (accessible sur ordinateur et téléphone)." },
               { n:3, title:'DEMANDE D’EXTRAS ', desc:'Le client dépose sa demande d’évènement en moins d’une minute sur la plateforme' },
-              { n:4, title:'RECEPTION DE LA DEMANDE ', desc:"Bookly Agency sélectionne le ou les extra(s) auto-entrepreneurs adapté(s) au type d'événement demandé." },
+              { n:4, title:'RECEPTION DE LA DEMANDE ', desc:"Staffly Agency sélectionne le ou les extra(s) auto-entrepreneurs adapté(s) au type d'événement demandé." },
               { n:5, title:"VALIDATION DE L'EXTRA", desc:"L'extra répondra en moins de 10 minutes. Une fois la mission validée par l'extra, vous recevrez ses coordonnées. " },
               { n:6, title:'MISSION VALIDÉE !', desc:"En moins de 15 minutes via l'application, la prestation est bookée et la brigade d'extras est validée. " },
             ].map((s, i) => (
@@ -486,8 +486,8 @@ export default function Home() {
             </div>
             <div className="numbers__content">
               <p className="eyebrow">En chiffres</p>
-              <h2 className="h2">Bookly, la référence du staffing <span className="accent">événementiel</span></h2>
-              <p className="section-lead">Nos clients font confiance à Bookly pour leur prestation. Voici pourquoi. </p>
+              <h2 className="h2">Staffly, la référence du staffing <span className="accent">événementiel</span></h2>
+              <p className="section-lead">Nos clients font confiance à Staffly pour leur prestation. Voici pourquoi. </p>
               <ul className="numbers__list">
                 {[
                   'Plus de 1000 extras actifs en Ile de France  ',
@@ -550,13 +550,13 @@ export default function Home() {
         <div className="container">
           <div className={`section-head section-head--center fade-up${testiVis?' visible':''}`}>
             <p className="eyebrow">Témoignages</p>
-            <h2 className="h2">Ils font confiance à <span className="accent">Bookly</span></h2>
+            <h2 className="h2">Ils font confiance à <span className="accent">Staffly</span></h2>
           </div>
           <div className="testis">
             {[
-              { q:'"', text:"Bookly a transformé notre façon de recruter pour nos galas. En moins de 20 minutes, j'avais confirmé une équipe complète de 8 serveurs et un sommelier pour notre dîner de prestige de 300 couverts.", name:'Marie Dupont', role:'Responsable événementiel · Agence Luxe Paris', init:'MD', stars:5 },
-              { text:"En tant qu'extra barista, j'avais besoin d'une plateforme fiable qui respecte mes disponibilités. Bookly m'a permis de multiplier mes prestations tout en gardant un contrôle total sur mon planning. La gestion des indisponibilités est très intuitive.", name:'Karim Bensalem', role:'Barista & Barman freelance · Lyon', init:'KB', stars:5 },
-              { text:"La transparence sur les profils, le système d'évaluation croisée, la rapidité de traitement des urgences… Bookly est devenu l'outil central de notre agence événementielle. Le ROI est immédiat.", name:'Lucie Martin', role:'Directrice · Events & Co Bordeaux', init:'LM', stars:5 },
+              { q:'"', text:"Staffly a transformé notre façon de recruter pour nos galas. En moins de 20 minutes, j'avais confirmé une équipe complète de 8 serveurs et un sommelier pour notre dîner de prestige de 300 couverts.", name:'Marie Dupont', role:'Responsable événementiel · Agence Luxe Paris', init:'MD', stars:5 },
+              { text:"En tant qu'extra barista, j'avais besoin d'une plateforme fiable qui respecte mes disponibilités. Staffly m'a permis de multiplier mes prestations tout en gardant un contrôle total sur mon planning. La gestion des indisponibilités est très intuitive.", name:'Karim Bensalem', role:'Barista & Barman freelance · Lyon', init:'KB', stars:5 },
+              { text:"La transparence sur les profils, le système d'évaluation croisée, la rapidité de traitement des urgences… Staffly est devenu l'outil central de notre agence événementielle. Le ROI est immédiat.", name:'Lucie Martin', role:'Directrice · Events & Co Bordeaux', init:'LM', stars:5 },
             ].map((t, i) => (
               <div key={i} className={`testi fade-up${testiVis?' visible':''} delay-${i+1}`}>
                 <div className="testi__stars">{Array(t.stars).fill(null).map((_,k)=><FontAwesomeIcon key={k} icon={faStar} style={{ width:14, height:14, color:'#f59e0b' }} />)}</div>
@@ -581,7 +581,7 @@ export default function Home() {
           <div className={`section-head section-head--center fade-up${faqVis?' visible':''}`}>
             <p className="eyebrow">FAQ</p>
             <h2 className="h2">Questions fréquentes</h2>
-            <p className="section-lead">Tout ce que vous devez savoir sur Bookly avant de commencer.</p>
+            <p className="section-lead">Tout ce que vous devez savoir sur Staffly avant de commencer.</p>
           </div>
           <div className={`faq fade-up${faqVis?' visible':''}`} style={{transitionDelay:'.1s'}}>
             {FAQS.map((f, i) => (
@@ -603,7 +603,7 @@ export default function Home() {
       <section className="cta-band" ref={ctaRef}>
         <div className={`container cta-band__inner fade-up${ctaVis?' visible':''}`}>
           <h2 className="cta-band__h2">Prêt à faciliter<br/> votre recherches d’extras ? </h2>
-          <p className="cta-band__p">Rejoignez notre plateforme de clients et d’extras qui font confiance à Bookly. Inscription gratuite et sans engagement. </p>
+          <p className="cta-band__p">Rejoignez notre plateforme de clients et d’extras qui font confiance à Staffly. Inscription gratuite et sans engagement. </p>
           <div className="cta-band__btns">
             <Link to="/inscription/client" className="btn btn-primary btn--lg">Démarrer gratuitement <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} /></Link>
             <button className="btn btn-dark btn--lg" onClick={() => scrollTo('contact')}>Nous contacter</button>

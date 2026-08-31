@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, LogIn, User, Briefcase, Menu, X } from 'lucide-react';
-import logo from '@/assets/logo.svg';
+import logo from '@/assets/staffly.svg';
 import './Header.css';
 
 const NAV_LINKS = [
@@ -130,7 +130,7 @@ useEffect(() => {
               <button
                 className={`hdr__btn-join${registerOpen ? ' hdr__btn-join--open' : ''}`}
                 onClick={() => setRegisterOpen(p => !p)}>
-                Rejoindre Bookly
+                Rejoindre Staffly
                 <ChevronDown size={13} />
               </button>
 
