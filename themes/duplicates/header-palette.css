@@ -1,0 +1,40 @@
+/* ══════════════════════════════════════════════════════
+   HEADER PALETTE — dup1 (Balanced) green
+   Filled from themes/templates/header-palette-template.css
+   Derived from src/components/Header.css
+   ══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand (primary / secondary / beige) ── */
+  --p: #748C6C;
+  --s: #B1B64F;
+  --beige: #E9EDE7;
+
+  /* ── Text / muted tones ── */
+  --text: #1A2018;
+  --nav-text: #2E3A2B;
+  --muted-2: #4A5945;
+
+  /* ── Borders / hairlines ── */
+  --border: #E0E5DD;
+  --border-4: #EDF1E9;
+  --border-5: #F2F5EF;
+
+  /* ── Whites ── */
+  --white: #fff;
+  --card: #fff;
+
+  /* ── Greys ── */
+  --grey-3: #bbb;
+
+  /* ── RGBA derived from brand #748C6C (rgb 116,140,108) ── */
+  --p-rgba-09: rgba(116,140,108,0.09);
+  --p-rgba-16: rgba(116,140,108,0.16);
+  --p-rgba-25: rgba(116,140,108,0.25);
+  --p-rgba-28: rgba(116,140,108,0.28);
+  --p-rgba-40: rgba(116,140,108,0.40);
+
+  /* ── RGBA white ── */
+  --white-rgba-20: rgba(255,255,255,0.20);
+  --white-rgba-94: rgba(255,255,255,0.94);
+}

@@ -30,6 +30,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
 import './Home.css';
+import '../../themes/duplicates/dup1.css';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (

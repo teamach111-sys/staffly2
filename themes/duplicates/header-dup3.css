@@ -1,0 +1,40 @@
+/* ══════════════════════════════════════════════════════
+   HEADER PALETTE — dup3 (Sage) green
+   Filled from themes/templates/header-palette-template.css
+   Derived from src/components/Header.css
+   ══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand (primary / secondary / beige) ── */
+  --p: #8AA083;
+  --s: #C6C96D;
+  --beige: #EDF0E8;
+
+  /* ── Text / muted tones ── */
+  --text: #232A22;
+  --nav-text: #3C473A;
+  --muted-2: #5C6B56;
+
+  /* ── Borders / hairlines ── */
+  --border: #E8EDE4;
+  --border-4: #F1F4EE;
+  --border-5: #F4F6F2;
+
+  /* ── Whites ── */
+  --white: #fff;
+  --card: #fff;
+
+  /* ── Greys ── */
+  --grey-3: #bbb;
+
+  /* ── RGBA derived from brand #8AA083 (rgb 138,160,131) ── */
+  --p-rgba-09: rgba(138,160,131,0.09);
+  --p-rgba-16: rgba(138,160,131,0.16);
+  --p-rgba-25: rgba(138,160,131,0.25);
+  --p-rgba-28: rgba(138,160,131,0.28);
+  --p-rgba-40: rgba(138,160,131,0.40);
+
+  /* ── RGBA white ── */
+  --white-rgba-20: rgba(255,255,255,0.20);
+  --white-rgba-94: rgba(255,255,255,0.94);
+}

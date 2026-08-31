@@ -1,0 +1,40 @@
+/* ══════════════════════════════════════════════════════
+   HEADER PALETTE — dup2 (Deep) green
+   Filled from themes/templates/header-palette-template.css
+   Derived from src/components/Header.css
+   ══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand (primary / secondary / beige) ── */
+  --p: #5F7A55;
+  --s: #A3A83C;
+  --beige: #E4EAE0;
+
+  /* ── Text / muted tones ── */
+  --text: #161B15;
+  --nav-text: #2E3A2B;
+  --muted-2: #43523E;
+
+  /* ── Borders / hairlines ── */
+  --border: #D7DFD2;
+  --border-4: #E6ECE2;
+  --border-5: #EDF1EA;
+
+  /* ── Whites ── */
+  --white: #fff;
+  --card: #fff;
+
+  /* ── Greys ── */
+  --grey-3: #bbb;
+
+  /* ── RGBA derived from brand #5F7A55 (rgb 95,122,85) ── */
+  --p-rgba-09: rgba(95,122,85,0.09);
+  --p-rgba-16: rgba(95,122,85,0.16);
+  --p-rgba-25: rgba(95,122,85,0.25);
+  --p-rgba-28: rgba(95,122,85,0.28);
+  --p-rgba-40: rgba(95,122,85,0.40);
+
+  /* ── RGBA white ── */
+  --white-rgba-20: rgba(255,255,255,0.20);
+  --white-rgba-94: rgba(255,255,255,0.94);
+}
