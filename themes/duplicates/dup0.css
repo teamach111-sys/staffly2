@@ -1,0 +1,195 @@
+/* ══════════════════════════════════════════════════════
+   HOME PALETTE — dup0 (Original ORANGE)
+   Copied from src/pages/Home.css  (pre-green original)
+   ══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand (primary / secondary / beige) ── */
+  --p:        #8C3E01;
+  --s:        #B9622C;
+  --beige:    #FDF3EE;
+
+  /* ── Brand shades & gradient accents ── */
+  --brand-light-1:   #f0a070;
+  --brand-light-2:   #e09060;
+  --brand-deep-1:    #3d1200;
+  --brand-deep-2:    #2d1200;
+  --brand-deep-3:    #2d1000;
+  --brand-deep-4:    #3d1a00;
+
+  /* ── Dark / deep neutral tones ── */
+  --dark:     #120800;
+  --dark-2:   #1a0800;
+  --dark-3:   #3a1a00;
+  --dark-4:   #4a2a10;
+
+  /* ── Text & muted browns ── */
+  --text:     #1a0800;
+  --muted:    #6b3a1a;
+  --muted-2:  #a07050;
+  --muted-3:  #b09070;
+  --muted-4:  #c0a090;
+
+  /* ── Borders / hairlines ── */
+  --border:   #ecddd6;
+  --border-2: #e8d4c6;
+  --border-3: #e0d0c8;
+  --border-4: #f0e4dd;
+  --border-5: #f5ede7;
+
+  /* ── Whites & background tones ── */
+  --card:     #fff;
+  --white:    #fff;
+  --white-tint-1: #fff9f6;
+  --white-tint-2: #fff2f2;
+  --white-tint-3: #fdf9f7;
+  --white-tint-4: #faf7f4;
+  --white-tint-5: #fff7ed;
+
+  /* ── Greys ── */
+  --grey-1:   #888;
+  --grey-2:   #aaa;
+  --grey-3:   #bbb;
+  --grey-4:   #ccc;
+
+  /* ── Status / semantic ── */
+  --success:       #22c55e;
+  --success-deep:  #15803d;
+  --success-light: #86efac;
+  --success-tint:  #f0fdf4;
+  --danger:        #dc2626;
+  --danger-light:  #fca5a5;
+  --danger-tint:   #fff2f2;
+
+  /* ── Brand / social accent colors ── */
+  --accent-orange: #f97316;
+  --accent-orange-deep:  #B9622C;
+  --accent-orange-soft:  #d07040;
+  --accent-orange-soft-2:#d4834e;
+  --accent-orange-light: #f0a060;
+  --beige-tint: #fff7ed;
+  --accent-blue:   #2563eb;
+  --accent-blue-2: #1877f2;
+  --accent-blue-3: #0077b5;
+  --accent-green:  #16a34a;
+  --accent-pink:   #e1306c;
+
+  /* ── Light tint backgrounds ── */
+  --tint-blue:     #eff6ff;
+  --tint-blue-2:   #f0f4ff;
+  --tint-blue-3:   #f0f9ff;
+  --tint-pink:     #fff5f7;
+
+  /* ── RGBA derived from brand #8C3E01 (rgb 140,62,1) ── */
+  --p-rgba-05:    rgba(140,62,1,0.05);
+  --p-rgba-07:    rgba(140,62,1,0.07);
+  --p-rgba-08:    rgba(140,62,1,0.08);
+  --p-rgba-09:    rgba(140,62,1,0.09);
+  --p-rgba-10:    rgba(140,62,1,0.10);
+  --p-rgba-15:    rgba(140,62,1,0.15);
+  --p-rgba-16:    rgba(140,62,1,0.16);
+  --p-rgba-25:    rgba(140,62,1,0.25);
+  --p-rgba-28:    rgba(140,62,1,0.28);
+  --p-rgba-30:    rgba(140,62,1,0.30);
+  --p-rgba-32:    rgba(140,62,1,0.32);
+  --p-rgba-40:    rgba(140,62,1,0.40);
+  --p-rgba-42:    rgba(140,62,1,0.42);
+
+  /* ── RGBA derived from #B9622C (rgb 185,98,44) ── */
+  --s-rgba-10:    rgba(185,98,44,0.10);
+  --s-rgba-11:    rgba(185,98,44,0.11);
+  --s-rgba-20:    rgba(185,98,44,0.20);
+  --s-rgba-28:    rgba(185,98,44,0.28);
+  --s-rgba-50:    rgba(185,98,44,0.50);
+
+  /* ── RGBA black ── */
+  --black-rgba-10: rgba(0,0,0,0.10);
+  --black-rgba-12: rgba(0,0,0,0.12);
+  --black-rgba-30: rgba(0,0,0,0.30);
+
+  /* ── RGBA white ── */
+  --white-rgba-05: rgba(255,255,255,0.05);
+  --white-rgba-06: rgba(255,255,255,0.06);
+  --white-rgba-07: rgba(255,255,255,0.07);
+  --white-rgba-08: rgba(255,255,255,0.08);
+  --white-rgba-10: rgba(255,255,255,0.10);
+  --white-rgba-12: rgba(255,255,255,0.12);
+  --white-rgba-15: rgba(255,255,255,0.15);
+  --white-rgba-18: rgba(255,255,255,0.18);
+  --white-rgba-20: rgba(255,255,255,0.20);
+  --white-rgba-28: rgba(255,255,255,0.28);
+  --white-rgba-30: rgba(255,255,255,0.30);
+  --white-rgba-40: rgba(255,255,255,0.40);
+  --white-rgba-45: rgba(255,255,255,0.45);
+  --white-rgba-50: rgba(255,255,255,0.50);
+  --white-rgba-55: rgba(255,255,255,0.55);
+  --white-rgba-60: rgba(255,255,255,0.60);
+  --white-rgba-62: rgba(255,255,255,0.62);
+  --white-rgba-82: rgba(255,255,255,0.82);
+  --white-rgba-94: rgba(255,255,255,0.94);
+
+  /* ── 8-digit hex (with alpha) ── */
+  --accent-blue-3-alpha:  #0077b520;
+  --accent-blue-2-alpha:  #1877f220;
+  --accent-pink-alpha:    #e1306c20;
+  --success-alpha:        #22c55e88;
+
+  /* ── Rating / stars ── */
+  --rating-star:  #f59e0b;
+
+  /* ── Hero avatars ── */
+  --avatar-sr:  #7c3d12;
+  --avatar-ma:  #92400e;
+  --avatar-jd:  #b45309;
+  --avatar-kl:  #d97706;
+  --avatar-pb:  #a16207;
+
+  /* ── Hero float chips ── */
+  --chip-barista:    #d97706;
+  --chip-service:    #7c3aed;
+  --chip-cocktails:  #0891b2;
+  --chip-gala:       #be185d;
+
+  /* ── Hero float icons (bg / fg) ── */
+  --float-ic-ok-bg:  #f0fdf4;  --float-ic-ok-fg:  #16a34a;
+  --float-ic-bolt-bg:#eff6ff;  --float-ic-bolt-fg:#2563eb;
+
+  /* ── Qualification role badges ── */
+  --qual-barista:        #d97706;
+  --qual-chef-cuisine:   #dc2626;
+  --qual-chef-rang:      #7c3aed;
+  --qual-maitre-hotel:   #059669;
+  --qual-serveur:        #0891b2;
+  --qual-mixologue:      #9333ea;
+  --qual-plongeur:       #b45309;
+  --qual-runner:         #047857;
+  --qual-chef-partie:    #1d4ed8;
+  --qual-commis:         #0e7490;
+
+  /* ── Prestation / service type tags (accent + bg gradient) ── */
+  --svc-evenementiel:  #7c3aed;  --svc-evenementiel-bg: linear-gradient(135deg,#ede9fe,#ddd6fe);
+  --svc-conferences:   #dc2626;  --svc-conferences-bg:  linear-gradient(135deg,#fee2e2,#fecaca);
+  --svc-restauration:  #059669;  --svc-restauration-bg: linear-gradient(135deg,#d1fae5,#a7f3d0);
+  --svc-mariages:      #be185d;  --svc-mariages-bg:     linear-gradient(135deg,#fce7f3,#fbcfe8);
+  --svc-corporate:     #0891b2;  --svc-corporate-bg:    linear-gradient(135deg,#e0f2fe,#bae6fd);
+  --svc-animations:    #d97706;  --svc-animations-bg:   linear-gradient(135deg,#fef3c7,#fde68a);
+
+  /* ── Feature cards (accent + bg) ── */
+  --feat-1: #7c3aed;  --feat-1-bg: #ede9fe;
+  --feat-2: #0891b2;  --feat-2-bg: #e0f2fe;
+  --feat-3: #059669;  --feat-3-bg: #d1fae5;
+  --feat-4: #d97706;  --feat-4-bg: #fef3c7;
+  --feat-5: #be185d;  --feat-5-bg: #fce7f3;
+  --feat-6: #1d4ed8;  --feat-6-bg: #eff6ff;
+
+  /* ── Ui.jsx (legacy sidebar, unused) ── */
+  --ui-sidebar:        #c4a484;
+  --ui-sidebar-active: #b38b6d;
+  --ui-submenu-bg:     #e0e0e0;
+
+  /* ── Non-color vars (preserved from original Home.css) ── */
+  --radius: 18px;
+  --radius-sm: 10px;
+  --shadow: 0 8px 40px var(--p-rgba-10);
+  --shadow-lg: 0 24px 80px var(--p-rgba-15);
+}
