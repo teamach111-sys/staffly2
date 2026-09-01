@@ -29,7 +29,6 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
-import './Home.css';
 import '../../themes/duplicates/dup2.css';
 
 /* ── Brand icons (FontAwesome) ── */
