@@ -107,7 +107,7 @@ useEffect(() => {
 
           {/* Desktop actions */}
           <div className="hdr__actions">
-            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__btn-login">
+            <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer" className="hdr__btn-login">
               <LogIn size={14} />
               Connexion
             </a>
@@ -123,7 +123,7 @@ useEffect(() => {
               {registerOpen && (
                 <div className="hdr__dropdown">
                   <p className="hdr__dropdown-title">Je suis…</p>
-                  <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__dropdown-item">
+                  <a href="https://booklyapp.fr/#/inscription/client" target="_blank" rel="noreferrer" className="hdr__dropdown-item">
                     <div className="hdr__dropdown-icon" style={{ background: 'var(--beige-tint)' }}>
                       <User size={16} color="var(--accent-orange)" />
                     </div>
@@ -132,7 +132,7 @@ useEffect(() => {
                       <span>Je cherche du personnel qualifié</span>
                     </div>
                   </a>
-                  <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__dropdown-item">
+                  <a href="https://booklyapp.fr/#/inscription/extra" target="_blank" rel="noreferrer" className="hdr__dropdown-item">
                     <div className="hdr__dropdown-icon" style={{ background: 'var(--beige)' }}>
                       <Briefcase size={16} color="var(--p)" />
                     </div>

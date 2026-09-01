@@ -21,6 +21,7 @@ import {
   faShieldHalved,
   faHeadset,
   faPlus,
+  faSpinner,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
@@ -29,6 +30,13 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
 import '../../themes/duplicates/dup1.css';
+
+/* ══════════════════════════════════════════════
+   CONTACT FORM CONFIG — Web3Forms
+   ══════════════════════════════════════════════
+*/
+const WEB3FORMS_ACCESS_KEY = '1880a765-819a-4066-b520-c0344c9079fd';
+const CONTACT_RECEIVER_EMAIL = 'lesly@stafflyagency.com';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (
@@ -102,8 +110,19 @@ function CheckIcon({ color = 'var(--p)' }) {
 ══════════════════════════════════════════════ */
 export default function Home() {
   const [heroReady, setHeroReady] = useState(false);
-  const [form, setForm]           = useState({ name:'', email:'', subject:'', message:'', type:'client' });
-  const [formStatus, setFormStatus] = useState(null);
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    type: 'client',
+    // honeypot: real visitors never see or fill this. If it has any
+    // value on submit, the request is treated as a bot and dropped.
+    company_website: '',
+    // visible anti-bot confirmation checkbox
+    notRobot: false,
+  });
+  const [formStatus, setFormStatus] = useState(null); // null | 'sending' | 'ok' | 'error' | 'need-checkbox'
   const [openFaq, setOpenFaq]     = useState(null);
 
   const [statsRef,  statsVis]   = useInView(0.3);
@@ -121,21 +140,69 @@ export default function Home() {
 
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
-  /* contact submit */
+  /* ── contact submit ── */
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Honeypot tripped → almost certainly a bot. Pretend it worked
+    // (don't tip the bot off) but never actually send anything.
+    if (form.company_website) {
+      setFormStatus('ok');
+      setForm({ name:'', email:'', subject:'', message:'', type:'client', company_website:'', notRobot:false });
+      return;
+    }
+
+    const requiredFieldsFilled =
+      form.name.trim() !== '' &&
+      form.email.trim() !== '' &&
+      form.subject.trim() !== '' &&
+      form.message.trim() !== '' &&
+      form.type.trim() !== '';
+
+    if (!requiredFieldsFilled) {
+      setFormStatus('need-fields');
+      return;
+    }
+
+    if (!EMAIL_RE.test(form.email.trim())) {
+      setFormStatus('invalid-email');
+      return;
+    }
+
+    if (!form.notRobot) {
+      setFormStatus('need-checkbox');
+      return;
+    }
+
     setFormStatus('sending');
     try {
-      await fetch('/api/contact', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...form, to: 'aithmidine.mouad@gmail.com' }),
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: form.subject || 'Nouveau message depuis Staffly',
+          from_name: form.name,
+          email: form.email,
+          message: form.message,
+          type_demande: form.type,
+          to: CONTACT_RECEIVER_EMAIL,
+          // Web3Forms' own spam filter, in addition to ours above
+          botcheck: false,
+        }),
       });
-      setFormStatus('ok');
-      setForm({ name:'', email:'', subject:'', message:'', type:'client' });
+      const data = await res.json();
+
+      if (data.success) {
+        setFormStatus('ok');
+        setForm({ name:'', email:'', subject:'', message:'', type:'client', company_website:'', notRobot:false });
+      } else {
+        setFormStatus('error');
+      }
     } catch {
-      window.location.href = `mailto:aithmidine.mouad@gmail.com?subject=${encodeURIComponent(form.subject || 'Contact Staffly')}&body=${encodeURIComponent(`De : ${form.name} (${form.email})\nType : ${form.type}\n\n${form.message}`)}`;
-      setFormStatus('ok');
+      setFormStatus('error');
     }
   };
 
@@ -242,7 +309,7 @@ export default function Home() {
             <div>
               <div className="hero__badge">
                 <span className="hero__badge-pulse" />
-                Plateforme de placement d’extras auto-entrepreneurs 
+                Plateforme de placement d’extras auto-entrepreneurs
               </div>
               <h1 className="hero__h1">
                 <span className="hero__h1-line">Le bon talent,</span>
@@ -250,7 +317,7 @@ export default function Home() {
                 <span className="hero__h1-line hero__h1-accent">partout en France.</span>
               </h1>
               <p className="hero__sub">
-                Staffly connecte en temps réel les entreprises avec des extras qualifiés et vérifiés.  Déposez votre prestation et recevez des candidatures en quelques minutes. 
+                Staffly connecte en temps réel les entreprises avec des extras qualifiés et vérifiés.  Déposez votre prestation et recevez des candidatures en quelques minutes.
               </p>
               <div className="hero__ctas">
                 <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">
@@ -351,9 +418,9 @@ export default function Home() {
             <p className="eyebrow">Types de prestations</p>
             <h2 className="h2">Pour chaque événement,<br/>les bons <span className="accent">profils</span></h2>
             <p className="section-lead">
-              Staffly couvre l’ensemble du secteur événementiel et de la restauration. 
+              Staffly couvre l’ensemble du secteur événementiel et de la restauration.
               <br/>
-              Quels que soient vos besoins, nous avons les profils qualifiés pour votre prestation. 
+              Quels que soient vos besoins, nous avons les profils qualifiés pour votre prestation.
             </p>
           </div>
           <div className="prestations__grid">
@@ -440,7 +507,7 @@ export default function Home() {
           <div className={`section-head section-head--center fade-up${stepsVis?' visible':''}`}>
             <p className="eyebrow">Fonctionnement</p>
             <h2 className="h2">
-            De la création de vos accès Staffly à <br/> votre <span className="accent">évènement</span> en 6 étapes 
+            De la création de vos accès Staffly à <br/> votre <span className="accent">évènement</span> en 6 étapes
             </h2>
             <p className="section-lead">
               Un processus clair et rapide, du premier contact jusqu’à la fin de la prestation
@@ -492,7 +559,7 @@ export default function Home() {
                   'Plus de 1000 extras actifs en Ile de France  ',
                   '98% des prestations sont pourvus en moins de 24 heures',
                    'Un service client disponible 7j/7h, 24h/24h',
-                    'Une réactivité inégalée pour les urgences de dernière minute'  
+                    'Une réactivité inégalée pour les urgences de dernière minute'
                 ].map((t,i)=>(
                   <li key={i} className="numbers__li">
                     <div className="numbers__li-icon">
@@ -616,7 +683,7 @@ export default function Home() {
           <div className={`section-head section-head--center fade-up${contactVis?' visible':''}`}>
             <p className="eyebrow">Contact</p>
             <h2 className="h2">Parlons de votre <span className="accent">projet</span></h2>
-            
+
           </div>
 
           <div className={`contact-grid fade-up${contactVis?' visible':''}`} style={{transitionDelay:'.1s'}}>
@@ -683,20 +750,20 @@ export default function Home() {
                 <div className="form-row">
                   <div className="form-field">
                     <label>Nom complet <span className="req">*</span></label>
-                    <input type="text" required placeholder="Jean Dupont"
+                    <input type="text" required disabled={formStatus === 'sending'} placeholder="Jean Dupont"
                       value={form.name} onChange={e=>setForm(p=>({...p,name:e.target.value}))} />
                   </div>
                   <div className="form-field">
                     <label>Adresse email <span className="req">*</span></label>
-                    <input type="email" required placeholder="jean@entreprise.com"
+                    <input type="email" required disabled={formStatus === 'sending'} placeholder="jean@entreprise.com"
                       value={form.email} onChange={e=>setForm(p=>({...p,email:e.target.value}))} />
                   </div>
                 </div>
 
                 <div className="form-row">
                   <div className="form-field">
-                    <label>Je suis</label>
-                    <select value={form.type} onChange={e=>setForm(p=>({...p,type:e.target.value}))}>
+                    <label>Je suis <span className="req">*</span></label>
+                    <select required disabled={formStatus === 'sending'} value={form.type} onChange={e=>setForm(p=>({...p,type:e.target.value}))}>
                       <option value="client">Client / Entreprise</option>
                       <option value="extra">Extra / Freelance</option>
                       <option value="partner">Partenaire</option>
@@ -705,17 +772,44 @@ export default function Home() {
                   </div>
                   <div className="form-field">
                     <label>Sujet <span className="req">*</span></label>
-                    <input type="text" required placeholder="Objet de votre message"
+                    <input type="text" required disabled={formStatus === 'sending'} placeholder="Objet de votre message"
                       value={form.subject} onChange={e=>setForm(p=>({...p,subject:e.target.value}))} />
                   </div>
                 </div>
 
                 <div className="form-field">
                   <label>Message <span className="req">*</span></label>
-                  <textarea required rows={5}
+                  <textarea required disabled={formStatus === 'sending'} rows={5}
                     placeholder="Décrivez votre projet, vos besoins ou votre question en détail…"
                     value={form.message} onChange={e=>setForm(p=>({...p,message:e.target.value}))} />
                 </div>
+
+                {/* Honeypot — invisible to real visitors, only bots fill this in.
+                    Kept off-screen (not display:none) so basic bots that skip
+                    hidden fields still tend to fill it. */}
+                <div style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }} aria-hidden="true">
+                  <label htmlFor="company_website">Ne pas remplir ce champ</label>
+                  <input
+                    type="text"
+                    id="company_website"
+                    name="company_website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={form.company_website}
+                    onChange={e=>setForm(p=>({...p, company_website: e.target.value}))}
+                  />
+                </div>
+
+                <label className="form-field form-field--checkbox" style={{ flexDirection:'row', alignItems:'center', gap:8, display:'flex' }}>
+                  <input
+                    type="checkbox"
+                    required
+                    disabled={formStatus === 'sending'}
+                    checked={form.notRobot}
+                    onChange={e=>setForm(p=>({...p, notRobot: e.target.checked}))}
+                  />
+                  <span>Je ne suis pas un robot <span className="req">*</span></span>
+                </label>
 
                 {formStatus === 'ok' && (
                   <div className="form-success">
@@ -728,10 +822,25 @@ export default function Home() {
                     Une erreur est survenue. Réessayez ou contactez-nous directement par email.
                   </div>
                 )}
+                {formStatus === 'need-fields' && (
+                  <div className="form-error">
+                    Merci de remplir tous les champs obligatoires avant d'envoyer.
+                  </div>
+                )}
+                {formStatus === 'invalid-email' && (
+                  <div className="form-error">
+                    Merci de saisir une adresse email valide.
+                  </div>
+                )}
+                {formStatus === 'need-checkbox' && (
+                  <div className="form-error">
+                    Merci de cocher la case "Je ne suis pas un robot" avant d'envoyer.
+                  </div>
+                )}
 
-                <button type="submit" className="btn btn-primary contact-submit" disabled={formStatus === 'sending'}>
+                <button type="submit" className="btn btn-primary contact-submit" disabled={formStatus === 'sending'} aria-busy={formStatus === 'sending'}>
                   {formStatus === 'sending'
-                    ? <><span className="lp-spinner" /> Envoi en cours…</>
+                    ? <><FontAwesomeIcon icon={faSpinner} spin style={{ width:15, height:15 }} /> Envoi en cours…</>
                     : <><FontAwesomeIcon icon={faPaperPlane} style={{ width:15, height:15 }} /> Envoyer le message</>
                   }
                 </button>
@@ -748,7 +857,7 @@ export default function Home() {
             <div>
               <div className="footer__logo">Staff<em>ly</em></div>
               <p className="footer__tagline">La plateforme de placement d’auto-entrepreuneurs qui connecte entreprise et extras qualifiés. </p>
-              
+
             </div>
             <div>
               <p className="footer__col-title">Navigation</p>
@@ -758,9 +867,9 @@ export default function Home() {
             </div>
             <div>
               <p className="footer__col-title">Compte</p>
-              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"             className="footer__link">Connexion</a>
-              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="footer__link">Espace client</a>
-              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"  className="footer__link">Espace extra</a>
+              <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer"             className="footer__link">Connexion</a>
+              <a href="https://booklyapp.fr/#/espace-client" target="_blank" rel="noreferrer" className="footer__link">Espace client</a>
+              <a href="https://booklyapp.fr/#/espace-extra" target="_blank" rel="noreferrer"  className="footer__link">Espace extra</a>
             </div>
             <div>
               <p className="footer__col-title">Contact & Légal</p>
