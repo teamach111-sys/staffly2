@@ -28,7 +28,7 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
-import '../../themes/duplicates/dup4.css';
+import '../../themes/duplicates/dup1.css';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (
@@ -752,7 +752,7 @@ export default function Home() {
             </div>
             <div>
               <p className="footer__col-title">Navigation</p>
-              {[['hero','Accueil'],['prestations','Prestations'],['services','Services'],['steps','Fonctionnement'],['contact','Contact']].map(([id,l])=>(
+              {[['hero','Accueil'],['prestations','Prestations'],['steps','Fonctionnement'],['services','Services'],['contact','Contact']].map(([id,l])=>(
                 <button key={id} className="footer__link" onClick={()=>scrollTo(id)}>{l}</button>
               ))}
             </div>

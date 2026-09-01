@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronDown, LogIn, User, Briefcase, Menu, X } from 'lucide-react';
 import logo from '@/assets/staffly.svg';
-import '../../themes/duplicates/header-dup4.css';
+import '../../themes/duplicates/header-dup1.css';
 
 const NAV_LINKS = [
   { label: 'Accueil',          href: '#hero',            section: 'hero'        },
   { label: 'Prestations',      href: '#prestations',     section: 'prestations' },
-  { label: 'Services',         href: '#services',        section: 'services'    },
   { label: 'Fonctionnement',   href: '#steps',           section: 'steps'       },
+  { label: 'Services',         href: '#services',        section: 'services'    },
   { label: 'Contact',          href: '#contact',         section: 'contact'     },
 ];
 
