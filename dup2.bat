@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 setlocal
 set "me=%~n0"
 set "num=%me:dup=%"
