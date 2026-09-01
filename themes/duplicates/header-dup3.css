@@ -1,10 +1,3 @@
-/* ══════════════════════════════════════════════════════
-   HEADER PALETTE — dup3 (Deep Emerald / STRONG) green
-   Stronger than dup2: darker, richer, more saturated green
-   Same green family, dialed up — matches HOME dup3
-   Derived from src/components/Header.css template
-   ══════════════════════════════════════════════════════ */
-
 :root {
   /* ── Brand (primary / secondary / beige) ── */
   --p: #1E331E;
@@ -211,3 +204,5 @@
     object-position: center;
     object-fit: cover;
 }
+
+

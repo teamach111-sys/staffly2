@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, LogIn, User, Briefcase, Menu, X } from 'lucide-react';
 import logo from '@/assets/staffly.svg';
-import '../../themes/duplicates/header-dup4.css';
+import '../../themes/duplicates/header-dup0.css';
 
 const NAV_LINKS = [
   { label: 'Accueil',          href: '/accueil',          section: 'hero'        },

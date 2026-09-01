@@ -1,10 +1,3 @@
-/* ══════════════════════════════════════════════════════
-   PALETTE.CSS — Color palette extracted from Home.css
-   Every color found in Home.css as root variables.
-   (Existing aliases preserved: --p, --s, --beige, --dark,
-    --text, --muted, --border, --card, plus new ones.)
-══════════════════════════════════════════════════════ */
-
 :root {
   /* ── Brand (primary / secondary / beige) ── */
   --p:        #8C3E01;
@@ -130,3 +123,5 @@
   --accent-pink-alpha:    #e1306c20;   /* instagram border with alpha */
   --success-alpha:        #22c55e88;   /* success dot glow with alpha */
 }
+
+

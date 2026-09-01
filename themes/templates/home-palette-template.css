@@ -1,9 +1,3 @@
-/* ══════════════════════════════════════════════════════
-   HOME PALETTE TEMPLATE
-   Copy the variable names — fill in YOUR values.
-   Derived from src/pages/Home.css
-   ══════════════════════════════════════════════════════ */
-
 :root {
   /* ── Brand (primary / secondary / beige) ── */
   --p: ;
@@ -208,3 +202,5 @@
   --shadow: ;
   --shadow-lg: ;
 }
+
+

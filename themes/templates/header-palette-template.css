@@ -1,10 +1,3 @@
-/* ══════════════════════════════════════════════════════
-   HEADER PALETTE TEMPLATE
-   Copy the variable names — fill in YOUR values.
-   Derived from src/components/Header.css
-   ── Brand (primary / secondary / beige) ──
-   ══════════════════════════════════════════════════════ */
-
 :root {
   /* ── Brand (primary / secondary / beige) ── */
   --p: ;
@@ -39,3 +32,5 @@
   --white-rgba-20: ;
   --white-rgba-94: ;
 }
+
+

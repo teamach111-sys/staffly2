@@ -29,7 +29,7 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
-import '../../themes/duplicates/dup4.css';
+import '../../themes/duplicates/dup0.css';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (
