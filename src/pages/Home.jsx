@@ -253,7 +253,7 @@ export default function Home() {
                 Staffly connecte en temps réel les entreprises avec des extras qualifiés et vérifiés.  Déposez votre prestation et recevez des candidatures en quelques minutes. 
               </p>
               <div className="hero__ctas">
-                <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">
+                <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">
                   Trouver du personnel
                   <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} />
                 </a>
@@ -502,7 +502,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary">Créer un compte gratuitement</a>
+              <a href="https://booklyapp.fr/#/inscription/client" target="_blank" rel="noreferrer" className="btn btn-primary">Créer un compte gratuitement</a>
             </div>
           </div>
         </div>
@@ -525,7 +525,7 @@ export default function Home() {
                   <li key={i} className="forwho__li"><CheckIcon color="var(--p)" /><span style={{color:'var(--text)'}}>{t}</span></li>
                 ))}
               </ul>
-              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary">Créer un compte client <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></a>
+              <a href="https://booklyapp.fr/#/inscription/client" target="_blank" rel="noreferrer" className="btn btn-primary">Créer un compte client <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></a>
               <div className="forwho__bg-circle" style={{background:'var(--p)'}} />
             </div>
             <div className="forwho__card forwho__card--dark">
@@ -537,7 +537,7 @@ export default function Home() {
                   <li key={i} className="forwho__li"><CheckIcon color="var(--accent-orange-deep)" /><span style={{color:'var(--white-rgba-82)'}}>{t}</span></li>
                 ))}
               </ul>
-              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{background:'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft))'}}>Devenir extra <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></a>
+              <a href="https://booklyapp.fr/#/inscription/extra" target="_blank" rel="noreferrer" className="btn btn-primary" style={{background:'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft))'}}>Devenir extra <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></a>
               <div className="forwho__bg-circle" style={{background:'var(--white)'}} />
             </div>
           </div>
@@ -604,7 +604,7 @@ export default function Home() {
           <h2 className="cta-band__h2">Prêt à faciliter<br/> votre recherches d’extras ? </h2>
           <p className="cta-band__p">Rejoignez notre plateforme de clients et d’extras qui font confiance à Staffly. Inscription gratuite et sans engagement. </p>
           <div className="cta-band__btns">
-            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">Démarrer gratuitement <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} /></a>
+            <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">Démarrer gratuitement <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} /></a>
             <button className="btn btn-dark btn--lg" onClick={() => scrollTo('contact')}>Nous contacter</button>
           </div>
         </div>
