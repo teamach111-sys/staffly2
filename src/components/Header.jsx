@@ -1,15 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, LogIn, User, Briefcase, Menu, X } from 'lucide-react';
 import logo from '@/assets/staffly.svg';
-import '../../themes/duplicates/header-dup0.css';
+import '../../themes/duplicates/header-dup4.css';
 
 const NAV_LINKS = [
-  { label: 'Accueil',          href: '/accueil',          section: 'hero'        },
-  { label: 'Prestations',      href: '/accueil#prestations', section: 'prestations' },
-  { label: 'Services',         href: '/accueil#services',    section: 'services'    },
-  { label: 'Fonctionnement',   href: '/accueil#steps',       section: 'steps'       },
-  { label: 'Contact',          href: '/accueil#contact',     section: 'contact'     },
+  { label: 'Accueil',          href: '#hero',            section: 'hero'        },
+  { label: 'Prestations',      href: '#prestations',     section: 'prestations' },
+  { label: 'Services',         href: '#services',        section: 'services'    },
+  { label: 'Fonctionnement',   href: '#steps',           section: 'steps'       },
+  { label: 'Contact',          href: '#contact',         section: 'contact'     },
 ];
 
 export default function Header() {
@@ -17,11 +16,8 @@ export default function Header() {
   const [menuOpen,     setMenuOpen]     = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
-  const location  = useLocation();
-  const navigate  = useNavigate();
   const regRef    = useRef(null);
   const navTimer  = useRef(null);
-  const isHome    = location.pathname === '/accueil';
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
 useEffect(() => {
@@ -37,7 +33,6 @@ useEffect(() => {
   }, []);
 
   useEffect(() => {
-    if (!isHome) { setActiveSection(null); return; }
     const ids = NAV_LINKS.map(n => n.section);
     let ticking = false;
     const h = () => {
@@ -70,7 +65,7 @@ useEffect(() => {
       clearTimeout(navTimer.current);
       navTimer.current = null;
     };
-  }, [isHome]);
+  }, []);
 
   useEffect(() => {
     const h = (e) => { if (regRef.current && !regRef.current.contains(e.target)) setRegisterOpen(false); };
@@ -78,23 +73,14 @@ useEffect(() => {
     return () => document.removeEventListener('mousedown', h);
   }, []);
 
-  useEffect(() => { setMenuOpen(false); setRegisterOpen(false); }, [location]);
-
   const handleNav = (e, item) => {
     e.preventDefault();
-    if (isHome) {
-      setActiveSection(item.section);
-      clearTimeout(navTimer.current);
-      navTimer.current = setTimeout(() => { navTimer.current = null; }, 900);
-      document.getElementById(item.section)?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate('/accueil');
-      setTimeout(() => document.getElementById(item.section)?.scrollIntoView({ behavior: 'smooth' }), 400);
-    }
+    setActiveSection(item.section);
+    clearTimeout(navTimer.current);
+    navTimer.current = setTimeout(() => { navTimer.current = null; }, 900);
+    document.getElementById(item.section)?.scrollIntoView({ behavior: 'smooth' });
     setMenuOpen(false);
   };
-
-  const isActive = (item) => isHome && activeSection === item.section;
 
   return (
     <>
@@ -102,9 +88,9 @@ useEffect(() => {
         <div className="hdr__inner">
 
           {/* Logo */}
-          <Link to="/accueil" className="hdr__logo">
+          <a href="#hero" className="hdr__logo">
             <img src={logo} alt="Staffly" className="hdr__logo-img" />
-          </Link>
+          </a>
 
           {/* Desktop nav */}
           <nav className="hdr__nav">
@@ -113,7 +99,7 @@ useEffect(() => {
                 key={item.section}
                 href={item.href}
                 onClick={(e) => handleNav(e, item)}
-                className={`hdr__link${isActive(item) ? ' hdr__link--active' : ''}`}>
+                className={`hdr__link${activeSection === item.section ? ' hdr__link--active' : ''}`}>
                 {item.label}
               </a>
             ))}
@@ -121,10 +107,10 @@ useEffect(() => {
 
           {/* Desktop actions */}
           <div className="hdr__actions">
-            <Link to="/login" className="hdr__btn-login">
+            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__btn-login">
               <LogIn size={14} />
               Connexion
-            </Link>
+            </a>
 
             <div ref={regRef} style={{ position: 'relative' }}>
               <button
@@ -137,7 +123,7 @@ useEffect(() => {
               {registerOpen && (
                 <div className="hdr__dropdown">
                   <p className="hdr__dropdown-title">Je suis…</p>
-                  <Link to="/inscription/client" className="hdr__dropdown-item">
+                  <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__dropdown-item">
                     <div className="hdr__dropdown-icon" style={{ background: 'var(--beige-tint)' }}>
                       <User size={16} color="var(--accent-orange)" />
                     </div>
@@ -145,8 +131,8 @@ useEffect(() => {
                       <strong>Client / Entreprise</strong>
                       <span>Je cherche du personnel qualifié</span>
                     </div>
-                  </Link>
-                  <Link to="/inscription/extra" className="hdr__dropdown-item">
+                  </a>
+                  <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__dropdown-item">
                     <div className="hdr__dropdown-icon" style={{ background: 'var(--beige)' }}>
                       <Briefcase size={16} color="var(--p)" />
                     </div>
@@ -154,7 +140,7 @@ useEffect(() => {
                       <strong>Extra / Freelance</strong>
                       <span>Je propose mes services</span>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               )}
             </div>
@@ -177,27 +163,27 @@ useEffect(() => {
                 key={item.section}
                 href={item.href}
                 onClick={(e) => handleNav(e, item)}
-                className={`hdr__mobile-link${isActive(item) ? ' hdr__mobile-link--active' : ''}`}>
+                className={`hdr__mobile-link${activeSection === item.section ? ' hdr__mobile-link--active' : ''}`}>
                 {item.label}
               </a>
             ))}
             <div className="hdr__mobile-sep" />
             <p className="hdr__mobile-label">Rejoindre Staffly</p>
-            <Link to="/inscription/client" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,var(--p),var(--accent-orange-deep))' }}>
+            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,var(--p),var(--accent-orange-deep))' }}>
               <div className="hdr__mobile-cta-icon"><User size={15} color="var(--white)" /></div>
               <div>
                 <div style={{ fontWeight: 700, fontSize: 13 }}>Client / Entreprise</div>
                 <div style={{ fontSize: 11, opacity: .8 }}>Je cherche du personnel qualifié</div>
               </div>
-            </Link>
-            <Link to="/inscription/extra" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft-2))' }}>
+            </a>
+            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__mobile-cta" style={{ background: 'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft-2))' }}>
               <div className="hdr__mobile-cta-icon"><Briefcase size={15} color="var(--white)" /></div>
               <div>
                 <div style={{ fontWeight: 700, fontSize: 13 }}>Extra / Freelance</div>
                 <div style={{ fontSize: 11, opacity: .8 }}>Je propose mes services</div>
               </div>
-            </Link>
-            <Link to="/login" className="hdr__mobile-login">Se connecter</Link>
+            </a>
+            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="hdr__mobile-login">Se connecter</a>
           </div>
         )}
       </header>

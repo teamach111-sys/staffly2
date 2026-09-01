@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import Header from '@/components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -29,7 +28,7 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
-import '../../themes/duplicates/dup0.css';
+import '../../themes/duplicates/dup4.css';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (
@@ -254,10 +253,10 @@ export default function Home() {
                 Staffly connecte en temps réel les entreprises avec des extras qualifiés et vérifiés.  Déposez votre prestation et recevez des candidatures en quelques minutes. 
               </p>
               <div className="hero__ctas">
-                <Link to="/inscription/client" className="btn btn-primary btn--lg">
+                <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">
                   Trouver du personnel
                   <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} />
-                </Link>
+                </a>
                 <button className="btn btn-ghost btn--lg" onClick={() => scrollTo('steps')}>
                   Découvrir la plateforme
                 </button>
@@ -503,7 +502,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Link to="/inscription/client" className="btn btn-primary">Créer un compte gratuitement</Link>
+              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary">Créer un compte gratuitement</a>
             </div>
           </div>
         </div>
@@ -526,7 +525,7 @@ export default function Home() {
                   <li key={i} className="forwho__li"><CheckIcon color="var(--p)" /><span style={{color:'var(--text)'}}>{t}</span></li>
                 ))}
               </ul>
-              <Link to="/inscription/client" className="btn btn-primary">Créer un compte client <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></Link>
+              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary">Créer un compte client <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></a>
               <div className="forwho__bg-circle" style={{background:'var(--p)'}} />
             </div>
             <div className="forwho__card forwho__card--dark">
@@ -538,7 +537,7 @@ export default function Home() {
                   <li key={i} className="forwho__li"><CheckIcon color="var(--accent-orange-deep)" /><span style={{color:'var(--white-rgba-82)'}}>{t}</span></li>
                 ))}
               </ul>
-              <Link to="/inscription/extra" className="btn btn-primary" style={{background:'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft))'}}>Devenir extra <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></Link>
+              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{background:'linear-gradient(135deg,var(--accent-orange-deep),var(--accent-orange-soft))'}}>Devenir extra <FontAwesomeIcon icon={faArrowRight} style={{ width:14, height:14 }} /></a>
               <div className="forwho__bg-circle" style={{background:'var(--white)'}} />
             </div>
           </div>
@@ -605,7 +604,7 @@ export default function Home() {
           <h2 className="cta-band__h2">Prêt à faciliter<br/> votre recherches d’extras ? </h2>
           <p className="cta-band__p">Rejoignez notre plateforme de clients et d’extras qui font confiance à Staffly. Inscription gratuite et sans engagement. </p>
           <div className="cta-band__btns">
-            <Link to="/inscription/client" className="btn btn-primary btn--lg">Démarrer gratuitement <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} /></Link>
+            <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="btn btn-primary btn--lg">Démarrer gratuitement <FontAwesomeIcon icon={faArrowRight} style={{ width:15, height:15 }} /></a>
             <button className="btn btn-dark btn--lg" onClick={() => scrollTo('contact')}>Nous contacter</button>
           </div>
         </div>
@@ -759,9 +758,9 @@ export default function Home() {
             </div>
             <div>
               <p className="footer__col-title">Compte</p>
-              <Link to="/login"           className="footer__link">Connexion</Link>
-              <Link to="/inscription/client" className="footer__link">Espace client</Link>
-              <Link to="/inscription/extra"  className="footer__link">Espace extra</Link>
+              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"             className="footer__link">Connexion</a>
+              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="footer__link">Espace client</a>
+              <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"  className="footer__link">Espace extra</a>
             </div>
             <div>
               <p className="footer__col-title">Contact & Légal</p>
@@ -769,9 +768,9 @@ export default function Home() {
               <a href="mailto: lesly@stafflyagency.com" className="footer__link"> lesly@stafflyagency.com </a>
               <span className="footer__link" style={{cursor:'default'}}>Paris, France</span>
               <div style={{marginTop:8}}>
-                <Link to="/privacy"  className="footer__link">Confidentialité</Link>
-                <Link to="/terms"    className="footer__link">CGU</Link>
-                <Link to="/mentions" className="footer__link">Mentions légales</Link>
+                <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"  className="footer__link">Confidentialité</a>
+                <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"    className="footer__link">CGU</a>
+                <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer" className="footer__link">Mentions légales</a>
               </div>
             </div>
           </div>

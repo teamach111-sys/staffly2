@@ -1,0 +1,238 @@
+:root {
+  /* â”€â”€ Brand (primary / secondary / beige) â”€â”€ */
+  --p: #1E331E;
+  --s: #7A9C34;
+  --beige: #E6ECE0;
+
+  /* â”€â”€ Brand shades & gradient accents â”€â”€ */
+  --brand-light-1: #7C9668;
+  --brand-light-2: #5F8050;
+  --brand-deep-1: #081108;
+  --brand-deep-2: #050B05;
+  --brand-deep-3: #040A04;
+  --brand-deep-4: #12230F;
+
+  /* â”€â”€ Dark / deep neutral tones â”€â”€ */
+  --dark: #050B05;
+  --dark-2: #050B05;
+  --dark-3: #17351A;
+  --dark-4: #21452A;
+
+  /* â”€â”€ Text & muted tones â”€â”€ */
+  --text: #08110B;
+  --muted: #2A4527;
+  --muted-2: #49663F;
+  --muted-3: #6A8660;
+  --muted-4: #93AB8A;
+
+  /* â”€â”€ Borders / hairlines â”€â”€ */
+  --border: #C4D2BC;
+  --border-2: #CBD8C3;
+  --border-3: #B6C9AC;
+  --border-4: #DDE7D7;
+  --border-5: #EDF1E8;
+
+  /* â”€â”€ Whites & background tones â”€â”€ */
+  --card: #FFFFFF;
+  --white: #FFFFFF;
+  --white-tint-1: #F4F8F1;
+  --white-tint-2: #EDF3E8;
+  --white-tint-3: #F2F6EF;
+  --white-tint-4: #F0F5ED;
+  --white-tint-5: #EAF1E2;
+
+  /* â”€â”€ Greys â”€â”€ */
+  --grey-1: #888888;
+  --grey-2: #AAAAAA;
+  --grey-3: #BBBBBB;
+  --grey-4: #CCCCCC;
+
+  /* â”€â”€ Status / semantic â”€â”€ */
+  --success: #22C55E;
+  --success-deep: #15803D;
+  --success-light: #86EFAC;
+  --success-tint: #F0FDF4;
+  --danger: #DC2626;
+  --danger-light: #FCA5A5;
+  --danger-tint: #FFF2F2;
+
+  /* â”€â”€ Brand / social accent colors â”€â”€ */
+  --accent-orange: #7A9C34;
+  --accent-orange-deep: #5E7A26;
+  --accent-orange-soft: #74914B;
+  --accent-orange-soft-2: #8FA96F;
+  --accent-orange-light: #C9D9AB;
+  --beige-tint: #EEF3E6;
+  --accent-blue: #2563EB;
+  --accent-blue-2: #1877F2;
+  --accent-blue-3: #0077B5;
+  --accent-green: #16A34A;
+  --accent-pink: #E1306C;
+
+  /* â”€â”€ Light tint backgrounds â”€â”€ */
+  --tint-blue: #EFF6FF;
+  --tint-blue-2: #F0F4FF;
+  --tint-blue-3: #F0F9FF;
+  --tint-pink: #FFF5F7;
+
+  /* â”€â”€ RGBA derived from brand #1E331E (rgb 30,51,30) â”€â”€ */
+  --p-rgba-05: rgba(30,51,30,0.05);
+  --p-rgba-07: rgba(30,51,30,0.07);
+  --p-rgba-08: rgba(30,51,30,0.08);
+  --p-rgba-09: rgba(30,51,30,0.09);
+  --p-rgba-10: rgba(30,51,30,0.10);
+  --p-rgba-15: rgba(30,51,30,0.15);
+  --p-rgba-16: rgba(30,51,30,0.16);
+  --p-rgba-25: rgba(30,51,30,0.25);
+  --p-rgba-28: rgba(30,51,30,0.28);
+  --p-rgba-30: rgba(30,51,30,0.30);
+  --p-rgba-32: rgba(30,51,30,0.32);
+  --p-rgba-40: rgba(30,51,30,0.40);
+  --p-rgba-42: rgba(30,51,30,0.42);
+
+  /* â”€â”€ RGBA derived from #7A9C34 (rgb 122,156,52) â”€â”€ */
+  --s-rgba-10: rgba(122,156,52,0.10);
+  --s-rgba-11: rgba(122,156,52,0.11);
+  --s-rgba-20: rgba(122,156,52,0.20);
+  --s-rgba-28: rgba(122,156,52,0.28);
+  --s-rgba-50: rgba(122,156,52,0.50);
+
+  /* â”€â”€ RGBA black â”€â”€ */
+  --black-rgba-10: rgba(0,0,0,0.10);
+  --black-rgba-12: rgba(0,0,0,0.12);
+  --black-rgba-30: rgba(0,0,0,0.30);
+
+  /* â”€â”€ RGBA white â”€â”€ */
+  --white-rgba-05: rgba(255,255,255,0.05);
+  --white-rgba-06: rgba(255,255,255,0.06);
+  --white-rgba-07: rgba(255,255,255,0.07);
+  --white-rgba-08: rgba(255,255,255,0.08);
+  --white-rgba-10: rgba(255,255,255,0.10);
+  --white-rgba-12: rgba(255,255,255,0.12);
+  --white-rgba-15: rgba(255,255,255,0.15);
+  --white-rgba-18: rgba(255,255,255,0.18);
+  --white-rgba-20: rgba(255,255,255,0.20);
+  --white-rgba-28: rgba(255,255,255,0.28);
+  --white-rgba-30: rgba(255,255,255,0.30);
+  --white-rgba-40: rgba(255,255,255,0.40);
+  --white-rgba-45: rgba(255,255,255,0.45);
+  --white-rgba-50: rgba(255,255,255,0.50);
+  --white-rgba-55: rgba(255,255,255,0.55);
+  --white-rgba-60: rgba(255,255,255,0.60);
+  --white-rgba-62: rgba(255,255,255,0.62);
+  --white-rgba-82: rgba(255,255,255,0.82);
+  --white-rgba-94: rgba(255,255,255,0.94);
+
+  /* â”€â”€ 8-digit hex (with alpha) â”€â”€ */
+  --accent-blue-3-alpha: #0077B520;
+  --accent-blue-2-alpha: #1877F220;
+  --accent-pink-alpha: #E1306C20;
+  --success-alpha: #22C55E88;
+
+  /* â”€â”€ Rating / stars â”€â”€ */
+  --rating-star: #F59E0B;
+
+  /* â”€â”€ Hero avatars â”€â”€ */
+  --avatar-sr: #1E331E;
+  --avatar-ma: #2E4A26;
+  --avatar-jd: #3E6130;
+  --avatar-kl: #4E7838;
+  --avatar-pb: #5F9040;
+
+  /* â”€â”€ Hero float chips â”€â”€ */
+  --chip-barista: #7A9C34;
+  --chip-service: #7C3AED;
+  --chip-cocktails: #0891B2;
+  --chip-gala: #BE185D;
+
+  /* â”€â”€ Hero float icons (bg / fg) â”€â”€ */
+  --float-ic-ok-bg: #F0FDF4;
+  --float-ic-ok-fg: #16A34A;
+  --float-ic-bolt-bg: #EFF6FF;
+  --float-ic-bolt-fg: #2563EB;
+
+  /* â”€â”€ Qualification role badges â”€â”€ */
+  --qual-barista: #1E331E;
+  --qual-chef-cuisine: #8B4A3A;
+  --qual-chef-rang: #6A4A8A;
+  --qual-maitre-hotel: #2A6070;
+  --qual-serveur: #0891B2;
+  --qual-mixologue: #8A3A7A;
+  --qual-plongeur: #4A7A3A;
+  --qual-runner: #3A6A50;
+  --qual-chef-partie: #3A5A8A;
+  --qual-commis: #4A6080;
+
+  /* â”€â”€ Prestation / service type tags (accent + bg gradient) â”€â”€ */
+  --svc-evenementiel: #6A4A8A;
+  --svc-evenementiel-bg: linear-gradient(135deg,#EDE9FE,#DDD6FE);
+  --svc-conferences: #2A6070;
+  --svc-conferences-bg: linear-gradient(135deg,#E0F2FE,#BAE6FD);
+  --svc-restauration: #8B4A3A;
+  --svc-restauration-bg: linear-gradient(135deg,#FBF0EA,#F5DDD0);
+  --svc-mariages: #8A3A7A;
+  --svc-mariages-bg: linear-gradient(135deg,#FCE7F3,#FBCFE8);
+  --svc-corporate: #6A4A8A;
+  --svc-corporate-bg: linear-gradient(135deg,#F4EFF8,#E8E0F0);
+  --svc-animations: #7A9C34;
+  --svc-animations-bg: linear-gradient(135deg,#F1F6DE,#DEE9BE);
+
+  /* â”€â”€ Feature cards (accent + bg) â”€â”€ */
+  --feat-1: #6A4A8A;
+  --feat-1-bg: #F4EFF8;
+  --feat-2: #2A6070;
+  --feat-2-bg: #E0F2FE;
+  --feat-3: #8B4A3A;
+  --feat-3-bg: #FBF0EA;
+  --feat-4: #7A9C34;
+  --feat-4-bg: #F1F6DE;
+  --feat-5: #8A3A7A;
+  --feat-5-bg: #FCE7F3;
+  --feat-6: #3A5A8A;
+  --feat-6-bg: #EFF6FF;
+
+  /* â”€â”€ Ui.jsx (legacy sidebar, unused) â”€â”€ */
+  --ui-sidebar: #12230F;
+  --ui-sidebar-active: #1E331E;
+  --ui-submenu-bg: #17351A;
+
+  /* â”€â”€ Non-color vars (preserved from original Home.css) â”€â”€ */
+  --radius: 18px;
+  --radius-sm: 10px;
+  --shadow: 0 8px 40px rgba(30,51,30,0.10);
+  --shadow-lg: 0 24px 80px rgba(30,51,30,0.15);
+}
+:root {
+  /* â”€â”€ Brand (primary / secondary / beige) â”€â”€ */
+  --p: #1E331E;
+  --s: #7A9C34;
+  --beige: #E6ECE0;
+
+  /* â”€â”€ Text / muted tones â”€â”€ */
+  --text: #08110B;
+  --nav-text: #2A4527;
+  --muted-2: #49663F;
+
+  /* â”€â”€ Borders / hairlines â”€â”€ */
+  --border: #C4D2BC;
+  --border-4: #DDE7D7;
+  --border-5: #EDF1E8;
+
+  /* â”€â”€ Whites â”€â”€ */
+  --white: #fff;
+  --card: #fff;
+
+  /* â”€â”€ Greys â”€â”€ */
+  --grey-3: #bbb;
+
+  /* â”€â”€ RGBA derived from brand #1E331E (rgb 30,51,30) â”€â”€ */
+  --p-rgba-09: rgba(30,51,30,0.09);
+  --p-rgba-16: rgba(30,51,30,0.16);
+  --p-rgba-25: rgba(30,51,30,0.25);
+  --p-rgba-28: rgba(30,51,30,0.28);
+  --p-rgba-40: rgba(30,51,30,0.40);
+
+  /* â”€â”€ RGBA white â”€â”€ */
+  --white-rgba-20: rgba(255,255,255,0.20);
+  --white-rgba-94: rgba(255,255,255,0.94);
+}
