@@ -1,114 +1,115 @@
-﻿/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   HOME PALETTE TEMPLATE
-   Copy the variable names â€” fill in YOUR values.
+﻿/* ══════════════════════════════════════════════════════
+   HOME PALETTE — dup2 (Deep/Rich) green
+   Filled from themes/templates/home-palette-template.css
    Derived from src/pages/Home.css
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+   Strength-matched against dup0 (orange original)
+   ══════════════════════════════════════════════════════ */
 
 :root {
-  /* â”€â”€ Brand (primary / secondary / beige) â”€â”€ */
-  --p: #5F7A55;
-  --s: #A3A83C;
-  --beige: #E4EAE0;
+  /* ── Brand (primary / secondary / beige) ── */
+  --p: #3A5530;
+  --s: #8A9A3E;
+  --beige: #EDF2EA;
 
-  /* â”€â”€ Brand shades & gradient accents â”€â”€ */
-  --brand-light-1: #A9BDA2;
-  --brand-light-2: #97AC90;
-  --brand-deep-1: #151A14;
-  --brand-deep-2: #0E120D;
-  --brand-deep-3: #0E120D;
-  --brand-deep-4: #1B221A;
+  /* ── Brand shades & gradient accents ── */
+  --brand-light-1: #8FAB82;
+  --brand-light-2: #7A9A6C;
+  --brand-deep-1: #0E1A0D;
+  --brand-deep-2: #0A120A;
+  --brand-deep-3: #0A110A;
+  --brand-deep-4: #1A2A18;
 
-  /* â”€â”€ Dark / deep neutral tones â”€â”€ */
-  --dark: #0E120D;
-  --dark-2: #0E120D;
-  --dark-3: #2E3A2B;
-  --dark-4: #3F4E3A;
+  /* ── Dark / deep neutral tones ── */
+  --dark: #0A120A;
+  --dark-2: #0A120A;
+  --dark-3: #263623;
+  --dark-4: #364A32;
 
-  /* â”€â”€ Text & muted tones â”€â”€ */
-  --text: #161B15;
-  --muted: #2C362A;
-  --muted-2: #43523E;
-  --muted-3: #65785C;
-  --muted-4: #94A190;
+  /* ── Text & muted tones ── */
+  --text: #0E1A0D;
+  --muted: #3A4D35;
+  --muted-2: #586E50;
+  --muted-3: #7A8E72;
+  --muted-4: #9EAD98;
 
-  /* â”€â”€ Borders / hairlines â”€â”€ */
-  --border: #D7DFD2;
-  --border-2: #D9E1D4;
-  --border-3: #C9D3C4;
-  --border-4: #E6ECE2;
-  --border-5: #EDF1EA;
+  /* ── Borders / hairlines ── */
+  --border: #D2DCCE;
+  --border-2: #D5DFD0;
+  --border-3: #C4D1BE;
+  --border-4: #E4ECE0;
+  --border-5: #EDF2EA;
 
-  /* â”€â”€ Whites & background tones â”€â”€ */
+  /* ── Whites & background tones ── */
   --card: #FFFFFF;
   --white: #FFFFFF;
-  --white-tint-1: #F7F9F5;
-  --white-tint-2: #F0F4EE;
-  --white-tint-3: #F5F7F2;
-  --white-tint-4: #F5F8F4;
-  --white-tint-5: #EEF3EA;
+  --white-tint-1: #F7FAF5;
+  --white-tint-2: #F1F6EE;
+  --white-tint-3: #F5F8F3;
+  --white-tint-4: #F3F7F1;
+  --white-tint-5: #EEF4EA;
 
-  /* â”€â”€ Greys â”€â”€ */
-  --grey-1: #888;
-  --grey-2: #aaa;
-  --grey-3: #bbb;
-  --grey-4: #ccc;
+  /* ── Greys ── */
+  --grey-1: #888888;
+  --grey-2: #AAAAAA;
+  --grey-3: #BBBBBB;
+  --grey-4: #CCCCCC;
 
-  /* â”€â”€ Status / semantic â”€â”€ */
-  --success: #22c55e;
-  --success-deep: #15803d;
-  --success-light: #86efac;
-  --success-tint: #f0fdf4;
-  --danger: #dc2626;
-  --danger-light: #fca5a5;
-  --danger-tint: #fff2f2;
+  /* ── Status / semantic ── */
+  --success: #22C55E;
+  --success-deep: #15803D;
+  --success-light: #86EFAC;
+  --success-tint: #F0FDF4;
+  --danger: #DC2626;
+  --danger-light: #FCA5A5;
+  --danger-tint: #FFF2F2;
 
-  /* â”€â”€ Brand / social accent colors â”€â”€ */
-  --accent-orange: #A3A83C;
-  --accent-orange-deep: #A3A83C;
-  --accent-orange-soft: #8EA353;
-  --accent-orange-soft-2: #9AAE60;
-  --accent-orange-light: #C2CB8C;
-  --beige-tint: #E9EEE4;
-  --accent-blue: #2563eb;
-  --accent-blue-2: #1877f2;
-  --accent-blue-3: #0077b5;
-  --accent-green: #16a34a;
-  --accent-pink: #e1306c;
+  /* ── Brand / social accent colors ── */
+  --accent-orange: #8A9A3E;
+  --accent-orange-deep: #6A8030;
+  --accent-orange-soft: #7A9440;
+  --accent-orange-soft-2: #96AD68;
+  --accent-orange-light: #C4D4A0;
+  --beige-tint: #EEF4EA;
+  --accent-blue: #2563EB;
+  --accent-blue-2: #1877F2;
+  --accent-blue-3: #0077B5;
+  --accent-green: #16A34A;
+  --accent-pink: #E1306C;
 
-  /* â”€â”€ Light tint backgrounds â”€â”€ */
-  --tint-blue: #eff6ff;
-  --tint-blue-2: #f0f4ff;
-  --tint-blue-3: #f0f9ff;
-  --tint-pink: #fff5f7;
+  /* ── Light tint backgrounds ── */
+  --tint-blue: #EFF6FF;
+  --tint-blue-2: #F0F4FF;
+  --tint-blue-3: #F0F9FF;
+  --tint-pink: #FFF5F7;
 
-  /* â”€â”€ RGBA derived from brand (primary) â”€â”€ */
-  --p-rgba-05: rgba(95,122,85,0.05);
-  --p-rgba-07: rgba(95,122,85,0.07);
-  --p-rgba-08: rgba(95,122,85,0.08);
-  --p-rgba-09: rgba(95,122,85,0.09);
-  --p-rgba-10: rgba(95,122,85,0.1);
-  --p-rgba-15: rgba(95,122,85,0.15);
-  --p-rgba-16: rgba(95,122,85,0.16);
-  --p-rgba-25: rgba(95,122,85,0.25);
-  --p-rgba-28: rgba(95,122,85,0.28);
-  --p-rgba-30: rgba(95,122,85,0.3);
-  --p-rgba-32: rgba(95,122,85,0.32);
-  --p-rgba-40: rgba(95,122,85,0.4);
-  --p-rgba-42: rgba(95,122,85,0.42);
+  /* ── RGBA derived from brand #3A5530 (rgb 58,85,48) ── */
+  --p-rgba-05: rgba(58,85,48,0.05);
+  --p-rgba-07: rgba(58,85,48,0.07);
+  --p-rgba-08: rgba(58,85,48,0.08);
+  --p-rgba-09: rgba(58,85,48,0.09);
+  --p-rgba-10: rgba(58,85,48,0.10);
+  --p-rgba-15: rgba(58,85,48,0.15);
+  --p-rgba-16: rgba(58,85,48,0.16);
+  --p-rgba-25: rgba(58,85,48,0.25);
+  --p-rgba-28: rgba(58,85,48,0.28);
+  --p-rgba-30: rgba(58,85,48,0.30);
+  --p-rgba-32: rgba(58,85,48,0.32);
+  --p-rgba-40: rgba(58,85,48,0.40);
+  --p-rgba-42: rgba(58,85,48,0.42);
 
-  /* â”€â”€ RGBA derived from brand (secondary) â”€â”€ */
-  --s-rgba-10: rgba(163,168,60,0.1);
-  --s-rgba-11: rgba(163,168,60,0.11);
-  --s-rgba-20: rgba(163,168,60,0.2);
-  --s-rgba-28: rgba(163,168,60,0.28);
-  --s-rgba-50: rgba(163,168,60,0.5);
+  /* ── RGBA derived from #8A9A3E (rgb 138,154,62) ── */
+  --s-rgba-10: rgba(138,154,62,0.10);
+  --s-rgba-11: rgba(138,154,62,0.11);
+  --s-rgba-20: rgba(138,154,62,0.20);
+  --s-rgba-28: rgba(138,154,62,0.28);
+  --s-rgba-50: rgba(138,154,62,0.50);
 
-  /* â”€â”€ RGBA black â”€â”€ */
+  /* ── RGBA black ── */
   --black-rgba-10: rgba(0,0,0,0.10);
   --black-rgba-12: rgba(0,0,0,0.12);
   --black-rgba-30: rgba(0,0,0,0.30);
 
-  /* â”€â”€ RGBA white â”€â”€ */
+  /* ── RGBA white ── */
   --white-rgba-05: rgba(255,255,255,0.05);
   --white-rgba-06: rgba(255,255,255,0.06);
   --white-rgba-07: rgba(255,255,255,0.07);
@@ -129,83 +130,82 @@
   --white-rgba-82: rgba(255,255,255,0.82);
   --white-rgba-94: rgba(255,255,255,0.94);
 
-  /* â”€â”€ 8-digit hex (with alpha) â”€â”€ */
-  --accent-blue-3-alpha: #0077b520;
-  --accent-blue-2-alpha: #1877f220;
-  --accent-pink-alpha: #e1306c20;
-  --success-alpha: #22c55e88;
+  /* ── 8-digit hex (with alpha) ── */
+  --accent-blue-3-alpha: #0077B520;
+  --accent-blue-2-alpha: #1877F220;
+  --accent-pink-alpha: #E1306C20;
+  --success-alpha: #22C55E88;
 
-  /* â”€â”€ Rating / stars â”€â”€ */
-  --rating-star: #f59e0b;
+  /* ── Rating / stars ── */
+  --rating-star: #F59E0B;
 
-  /* â”€â”€ Hero avatars â”€â”€ */
-  --avatar-sr: #4A5C42;
-  --avatar-ma: #5F7A55;
-  --avatar-jd: #748C6C;
-  --avatar-kl: #8AA083;
-  --avatar-pb: #A3A83C;
+  /* ── Hero avatars ── */
+  --avatar-sr: #3A5530;
+  --avatar-ma: #4A6840;
+  --avatar-jd: #5A7B50;
+  --avatar-kl: #6A8D60;
+  --avatar-pb: #7A9A3E;
 
-  /* â”€â”€ Hero float chips â”€â”€ */
-  --chip-barista: #d97706;
-  --chip-service: #7c3aed;
-  --chip-cocktails: #0891b2;
-  --chip-gala: #be185d;
+  /* ── Hero float chips ── */
+  --chip-barista: #8A9A3E;
+  --chip-service: #7C3AED;
+  --chip-cocktails: #0891B2;
+  --chip-gala: #BE185D;
 
-  /* â”€â”€ Hero float icons (bg / fg) â”€â”€ */
-  --float-ic-ok-bg: #f0fdf4;
-  --float-ic-ok-fg: #16a34a;
-  --float-ic-bolt-bg: #eff6ff;
-  --float-ic-bolt-fg: #2563eb;
+  /* ── Hero float icons (bg / fg) ── */
+  --float-ic-ok-bg: #F0FDF4;
+  --float-ic-ok-fg: #16A34A;
+  --float-ic-bolt-bg: #EFF6FF;
+  --float-ic-bolt-fg: #2563EB;
 
-  /* â”€â”€ Qualification role badges â”€â”€ */
-  --qual-barista: #d97706;
-  --qual-chef-cuisine: #dc2626;
-  --qual-chef-rang: #7c3aed;
-  --qual-maitre-hotel: #059669;
-  --qual-serveur: #0891b2;
-  --qual-mixologue: #9333ea;
-  --qual-plongeur: #b45309;
-  --qual-runner: #047857;
-  --qual-chef-partie: #1d4ed8;
-  --qual-commis: #0e7490;
+  /* ── Qualification role badges ── */
+  --qual-barista: #3A5530;
+  --qual-chef-cuisine: #8B4A3A;
+  --qual-chef-rang: #6A4A8A;
+  --qual-maitre-hotel: #2A6070;
+  --qual-serveur: #0891B2;
+  --qual-mixologue: #8A3A7A;
+  --qual-plongeur: #4A7A3A;
+  --qual-runner: #3A6A50;
+  --qual-chef-partie: #3A5A8A;
+  --qual-commis: #4A6080;
 
-  /* â”€â”€ Prestation / service type tags (accent + bg gradient) â”€â”€ */
-  --svc-evenementiel: #7c3aed;
-  --svc-evenementiel-bg: linear-gradient(135deg,#ede9fe,#ddd6fe);
-  --svc-conferences: #dc2626;
-  --svc-conferences-bg: linear-gradient(135deg,#fee2e2,#fecaca);
-  --svc-restauration: #059669;
-  --svc-restauration-bg: linear-gradient(135deg,#d1fae5,#a7f3d0);
-  --svc-mariages: #be185d;
-  --svc-mariages-bg: linear-gradient(135deg,#fce7f3,#fbcfe8);
-  --svc-corporate: #0891b2;
-  --svc-corporate-bg: linear-gradient(135deg,#e0f2fe,#bae6fd);
-  --svc-animations: #d97706;
-  --svc-animations-bg: linear-gradient(135deg,#fef3c7,#fde68a);
+  /* ── Prestation / service type tags (accent + bg gradient) ── */
+  --svc-evenementiel: #6A4A8A;
+  --svc-evenementiel-bg: linear-gradient(135deg,#EDE9FE,#DDD6FE);
+  --svc-conferences: #2A6070;
+  --svc-conferences-bg: linear-gradient(135deg,#E0F2FE,#BAE6FD);
+  --svc-restauration: #8B4A3A;
+  --svc-restauration-bg: linear-gradient(135deg,#FBF0EA,#F5DDD0);
+  --svc-mariages: #8A3A7A;
+  --svc-mariages-bg: linear-gradient(135deg,#FCE7F3,#FBCFE8);
+  --svc-corporate: #6A4A8A;
+  --svc-corporate-bg: linear-gradient(135deg,#F4EFF8,#E8E0F0);
+  --svc-animations: #8A9A3E;
+  --svc-animations-bg: linear-gradient(135deg,#F5F8E8,#E8F0C0);
 
-  /* â”€â”€ Feature cards (accent + bg) â”€â”€ */
-  --feat-1: #7c3aed;
-  --feat-1-bg: #ede9fe;
-  --feat-2: #0891b2;
-  --feat-2-bg: #e0f2fe;
-  --feat-3: #059669;
-  --feat-3-bg: #d1fae5;
-  --feat-4: #d97706;
-  --feat-4-bg: #fef3c7;
-  --feat-5: #be185d;
-  --feat-5-bg: #fce7f3;
-  --feat-6: #1d4ed8;
-  --feat-6-bg: #eff6ff;
+  /* ── Feature cards (accent + bg) ── */
+  --feat-1: #6A4A8A;
+  --feat-1-bg: #F4EFF8;
+  --feat-2: #2A6070;
+  --feat-2-bg: #E0F2FE;
+  --feat-3: #8B4A3A;
+  --feat-3-bg: #FBF0EA;
+  --feat-4: #8A9A3E;
+  --feat-4-bg: #F5F8E8;
+  --feat-5: #8A3A7A;
+  --feat-5-bg: #FCE7F3;
+  --feat-6: #3A5A8A;
+  --feat-6-bg: #EFF6FF;
 
-  /* â”€â”€ Ui.jsx (legacy sidebar, unused) â”€â”€ */
-  --ui-sidebar: #c4a484;
-  --ui-sidebar-active: #b38b6d;
-  --ui-submenu-bg: #e0e0e0;
+  /* ── Ui.jsx (legacy sidebar, unused) ── */
+  --ui-sidebar: #1A2A18;
+  --ui-sidebar-active: #3A5530;
+  --ui-submenu-bg: #263623;
 
-  /* â”€â”€ Non-color vars (preserved from original Home.css) â”€â”€ */
+  /* ── Non-color vars (preserved from original Home.css) ── */
   --radius: 18px;
   --radius-sm: 10px;
-  --shadow: 0 8px 40px rgba(95,122,85,0.10);
-  --shadow-lg: 0 24px 80px rgba(95,122,85,0.15);
+  --shadow: 0 8px 40px rgba(58,85,48,0.10);
+  --shadow-lg: 0 24px 80px rgba(58,85,48,0.15);
 }
-

@@ -30,7 +30,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import logo from '@/assets/logo.svg';
 import './Home.css';
-import '../../themes/duplicates/dup1.css';
+import '../../themes/duplicates/dup2.css';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (
@@ -640,13 +640,13 @@ export default function Home() {
                   <FontAwesomeIcon icon={faArrowRight} className="contact-card__arrow" style={{ width:14, height:14 }} />
                 </a>
 
-                <a href="mailto:lesly@booklyagency.com" className="contact-card">
+                <a href="mailto:lesly@stafflyagency.com" className="contact-card">
                   <div className="contact-card__icon contact-card__icon--mail">
                     <FontAwesomeIcon icon={faEnvelope} style={{ width:20, height:20 }} />
                   </div>
                   <div className="contact-card__body">
                     <span className="contact-card__label">Email</span>
-                    <span className="contact-card__value">lesly@booklyagency.com </span>
+                    <span className="contact-card__value">lesly@stafflyagency.com </span>
                     <span className="contact-card__hint">Réponse en mois de 12h </span>
                   </div>
                   <FontAwesomeIcon icon={faArrowRight} className="contact-card__arrow" style={{ width:14, height:14 }} />
@@ -767,7 +767,7 @@ export default function Home() {
             <div>
               <p className="footer__col-title">Contact & Légal</p>
               <a href="tel:+33756824636"              className="footer__link">+33 7 56 82 46 36</a>
-              <a href="mailto: lesly@booklyagency.com" className="footer__link"> lesly@booklyagency.com </a>
+              <a href="mailto: lesly@stafflyagency.com" className="footer__link"> lesly@stafflyagency.com </a>
               <span className="footer__link" style={{cursor:'default'}}>Paris, France</span>
               <div style={{marginTop:8}}>
                 <Link to="/privacy"  className="footer__link">Confidentialité</Link>
