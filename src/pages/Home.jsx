@@ -36,7 +36,7 @@ import '../../themes/duplicates/dup1.css';
    ══════════════════════════════════════════════
 */
 const WEB3FORMS_ACCESS_KEY = '1880a765-819a-4066-b520-c0344c9079fd';
-const CONTACT_RECEIVER_EMAIL = 'lesly@stafflyagency.com';
+const CONTACT_RECEIVER_EMAIL = 'nelson@stafflyagency.com';
 
 /* ── Brand icons (FontAwesome) ── */
 const IconLinkedin  = ({ size = 18 }) => (
@@ -699,19 +699,19 @@ export default function Home() {
                   </div>
                   <div className="contact-card__body">
                     <span className="contact-card__label">Téléphone</span>
-                    <span className="contact-card__value"> +33 7 56 82 46 36 </span>
+                    <span className="contact-card__value"> +33 6 98 94 62 64 </span>
                     <span className="contact-card__hint">7j/j ; 24h/24 </span>
                   </div>
                   <FontAwesomeIcon icon={faArrowRight} className="contact-card__arrow" style={{ width:14, height:14 }} />
                 </a>
 
-                <a href="mailto:lesly@stafflyagency.com" className="contact-card">
+                <a href="mailto:nelson@stafflyagency.com" className="contact-card">
                   <div className="contact-card__icon contact-card__icon--mail">
                     <FontAwesomeIcon icon={faEnvelope} style={{ width:20, height:20 }} />
                   </div>
                   <div className="contact-card__body">
                     <span className="contact-card__label">Email</span>
-                    <span className="contact-card__value">lesly@stafflyagency.com </span>
+                    <span className="contact-card__value">nelson@stafflyagency.com </span>
                     <span className="contact-card__hint">Réponse en mois de 12h </span>
                   </div>
                   <FontAwesomeIcon icon={faArrowRight} className="contact-card__arrow" style={{ width:14, height:14 }} />
@@ -868,13 +868,13 @@ export default function Home() {
             <div>
               <p className="footer__col-title">Compte</p>
               <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer"             className="footer__link">Connexion</a>
-              <a href="https://booklyapp.fr/#/espace-client" target="_blank" rel="noreferrer" className="footer__link">Espace client</a>
-              <a href="https://booklyapp.fr/#/espace-extra" target="_blank" rel="noreferrer"  className="footer__link">Espace extra</a>
+              <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer" className="footer__link">Espace client</a>
+              <a href="https://booklyapp.fr/#/login" target="_blank" rel="noreferrer"  className="footer__link">Espace extra</a>
             </div>
             <div>
               <p className="footer__col-title">Contact & Légal</p>
-              <a href="tel:+33756824636"              className="footer__link">+33 7 56 82 46 36</a>
-              <a href="mailto: lesly@stafflyagency.com" className="footer__link"> lesly@stafflyagency.com </a>
+              <a href="tel:+33698946264"              className="footer__link">+33 6 98 94 62 64</a>
+              <a href="mailto: nelson@stafflyagency.com" className="footer__link"> nelson@stafflyagency.com </a>
               <span className="footer__link" style={{cursor:'default'}}>Paris, France</span>
               <div style={{marginTop:8}}>
                 <a href="https://booklyapp.fr/" target="_blank" rel="noreferrer"  className="footer__link">Confidentialité</a>
