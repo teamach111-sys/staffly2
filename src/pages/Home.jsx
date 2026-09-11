@@ -873,8 +873,8 @@ export default function Home() {
             </div>
             <div>
               <p className="footer__col-title">Contact & Légal</p>
-              <a href="tel:+33756824636"              className="footer__link">+33 7 56 82 46 36</a>
-              <a href="mailto: lesly@booklyagency.com" className="footer__link"> lesly@booklyagency.com </a>
+              <a href="tel:+33698946264"              className="footer__link">+33 6 98 94 62 64</a>
+              <a href="mailto: nelson@stafflyagency.com" className="footer__link"> nelson@stafflyagency.com </a>
               <span className="footer__link" style={{cursor:'default'}}>Paris, France</span>
               <div style={{marginTop:8}}>
                 <a href="#/cookies" className="footer__link">Politique de cookies</a>
