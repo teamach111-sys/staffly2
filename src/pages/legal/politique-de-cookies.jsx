@@ -67,7 +67,7 @@ function Bullets({ children }) {
 }
 function PolitiqueDeCookies() {
   return /* @__PURE__ */ jsxDEV("main", { className: "document", children: /* @__PURE__ */ jsxDEV("article", { className: "page", children: [
-    /* @__PURE__ */ jsxDEV(DocumentHeader, { title: "POLITIQUE DE COOKIES", subtitle: "BOOKLY AGENCY", extra: updated }, void 0, false, {
+    /* @__PURE__ */ jsxDEV(DocumentHeader, { title: "POLITIQUE DE COOKIES", subtitle: "STAFFLY AGENCY", extra: updated }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 36,
       columnNumber: 9
@@ -94,7 +94,7 @@ function PolitiqueDeCookies() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "2. Quels cookies utilisons-nous ?", children: [
-      /* @__PURE__ */ jsxDEV("p", { children: "Le site Bookly Agency utilise des cookies strictement n\xE9cessaires et des cookies de mesure d\u2019audience." }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "Le site STAFFLY Agency utilise des cookies strictement n\xE9cessaires et des cookies de mesure d\u2019audience." }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 43,
         columnNumber: 11
@@ -290,7 +290,7 @@ function PolitiqueDeCookies() {
       lineNumber: 66,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV(Section, { title: "6. Contact", children: /* @__PURE__ */ jsxDEV("p", { children: "Pour toute question sur la gestion des cookies ou vos droits RGPD : lesly@booklyagency.com" }, void 0, false, {
+    /* @__PURE__ */ jsxDEV(Section, { title: "6. Contact", children: /* @__PURE__ */ jsxDEV("p", { children: "Pour toute question sur la gestion des cookies ou vos droits RGPD : nelson@stafflyagency.com" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 71,
       columnNumber: 37

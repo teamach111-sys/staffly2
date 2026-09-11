@@ -61,7 +61,7 @@ function Bullets({ children }) {
 }
 function MentionsLegales() {
   return /* @__PURE__ */ jsxDEV("main", { className: "document", children: /* @__PURE__ */ jsxDEV("article", { className: "page", children: [
-    /* @__PURE__ */ jsxDEV(DocumentHeader, { title: "MENTIONS L\xC9GALES", subtitle: "BOOKLY AGENCY" }, void 0, false, {
+    /* @__PURE__ */ jsxDEV(DocumentHeader, { title: "MENTIONS L\xC9GALES", subtitle: "STAFFLY AGENCY" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 33,
       columnNumber: 9
@@ -71,12 +71,12 @@ function MentionsLegales() {
       lineNumber: 34,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("p", { children: "Site internet : www.booklyagency.com" }, void 0, false, {
+    /* @__PURE__ */ jsxDEV("p", { children: "Site internet : www.stafflyagency.com" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 35,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("p", { children: "\xC9diteur : BOOKLY AGENCY" }, void 0, false, {
+    /* @__PURE__ */ jsxDEV("p", { children: "\xC9diteur : STAFFLY AGENCY" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 36,
       columnNumber: 9
@@ -88,7 +88,7 @@ function MentionsLegales() {
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV("p", { children: [
-        "BOOKLY AGENCY, Soci\xE9t\xE9 par Actions Simplifi\xE9e (SAS)",
+        "STAFFLY AGENCY, Soci\xE9t\xE9 par Actions Simplifi\xE9e (SAS)",
         /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 39,
@@ -118,7 +118,7 @@ function MentionsLegales() {
           lineNumber: 43,
           columnNumber: 54
         }, this),
-        "Contact : lesly@booklyagency.com"
+        "Contact : nelson@stafflyagency.com"
       ] }, void 0, true, {
         fileName: "<stdin>",
         lineNumber: 39,
@@ -146,7 +146,7 @@ function MentionsLegales() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "3. Activit\xE9 de l\u2019entreprise", children: [
-      /* @__PURE__ */ jsxDEV("p", { children: "Bookly Agency est une soci\xE9t\xE9 sp\xE9cialis\xE9e dans :" }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "STAFFLY Agency est une soci\xE9t\xE9 sp\xE9cialis\xE9e dans :" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 51,
         columnNumber: 11
@@ -183,7 +183,7 @@ function MentionsLegales() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "4. Propri\xE9t\xE9 intellectuelle", children: [
-      /* @__PURE__ */ jsxDEV("p", { children: "L\u2019ensemble des \xE9l\xE9ments pr\xE9sents sur le site (textes, images, vid\xE9os, graphismes, logo, structure) est la propri\xE9t\xE9 exclusive de Bookly Agency, sauf mention contraire." }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "L\u2019ensemble des \xE9l\xE9ments pr\xE9sents sur le site (textes, images, vid\xE9os, graphismes, logo, structure) est la propri\xE9t\xE9 exclusive de STAFFLY Agency, sauf mention contraire." }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 60,
         columnNumber: 11
@@ -282,7 +282,7 @@ function MentionsLegales() {
           lineNumber: 74,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV("p", { children: "Pour exercer vos droits : lesly@booklyagency.com" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "Pour exercer vos droits : lesly@stafflyagency.com" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 75,
           columnNumber: 13
@@ -314,7 +314,7 @@ function MentionsLegales() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "7. Responsabilit\xE9", children: [
-      /* @__PURE__ */ jsxDEV("p", { children: "Bookly Agency s\u2019efforce de fournir des informations fiables et \xE0 jour, mais ne garantit ni l\u2019exactitude, ni l\u2019exhaustivit\xE9 des contenus." }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "STAFFLY Agency s\u2019efforce de fournir des informations fiables et \xE0 jour, mais ne garantit ni l\u2019exactitude, ni l\u2019exhaustivit\xE9 des contenus." }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 83,
         columnNumber: 11
@@ -355,7 +355,7 @@ function MentionsLegales() {
       lineNumber: 82,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV(Section, { title: "8. Loi applicable", children: /* @__PURE__ */ jsxDEV("p", { children: "Les pr\xE9sentes mentions l\xE9gales sont r\xE9gies par la l\xE9gislation fran\xE7aise. En cas de litige, les tribunaux comp\xE9tents seront ceux du ressort du si\xE8ge social de Bookly Agency." }, void 0, false, {
+    /* @__PURE__ */ jsxDEV(Section, { title: "8. Loi applicable", children: /* @__PURE__ */ jsxDEV("p", { children: "Les pr\xE9sentes mentions l\xE9gales sont r\xE9gies par la l\xE9gislation fran\xE7aise. En cas de litige, les tribunaux comp\xE9tents seront ceux du ressort du si\xE8ge social de STAFFLY Agency." }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 88,
       columnNumber: 11

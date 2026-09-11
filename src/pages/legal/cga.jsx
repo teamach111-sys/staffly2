@@ -80,7 +80,7 @@ function Cga() {
       lineNumber: 36,
       columnNumber: 32
     }, this), subtitle: "APPLICABLES AUX PRESTATAIRES IND\xC9PENDANTS", extra: /* @__PURE__ */ jsxDEV(Fragment, { children: [
-      "BOOKLY AGENCY",
+      "STAFFLY AGENCY",
       /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 36,
@@ -102,7 +102,7 @@ function Cga() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "Article 1 \u2014 Identification", children: /* @__PURE__ */ jsxDEV("p", { children: [
-      "BOOKLY AGENCY",
+      "STAFFLY AGENCY",
       /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 39,
@@ -132,13 +132,13 @@ function Cga() {
         lineNumber: 39,
         columnNumber: 181
       }, this),
-      "Email : lesly@booklyagency.com",
+      "Email : nelson@stafflyagency.com",
       /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 39,
         columnNumber: 217
       }, this),
-      "Ci-apr\xE8s \xAB Bookly Agency \xBB."
+      "Ci-apr\xE8s \xAB STAFFLY Agency \xBB."
     ] }, void 0, true, {
       fileName: "<stdin>",
       lineNumber: 39,
@@ -175,7 +175,7 @@ function Cga() {
           lineNumber: 43,
           columnNumber: 154
         }, this),
-        /* @__PURE__ */ jsxDEV("li", { children: "les conditions du mandat confi\xE9 \xE0 Bookly Agency." }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("li", { children: "les conditions du mandat confi\xE9 \xE0 STAFFLY Agency." }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 43,
           columnNumber: 231
@@ -227,8 +227,8 @@ function Cga() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "Article 3 \u2014 Nature du service et mandat d\u2019int\xE9r\xEAt commun", children: [
-      /* @__PURE__ */ jsxDEV(Subsection, { title: "3.1 \u2014 Services fournis par Bookly Agency", children: [
-        /* @__PURE__ */ jsxDEV("p", { children: "Bookly Agency fournit au Prestataire :" }, void 0, false, {
+      /* @__PURE__ */ jsxDEV(Subsection, { title: "3.1 \u2014 Services fournis par STAFFLY Agency", children: [
+        /* @__PURE__ */ jsxDEV("p", { children: "STAFFLY Agency fournit au Prestataire :" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 50,
           columnNumber: 13
@@ -264,7 +264,7 @@ function Cga() {
           lineNumber: 51,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV("p", { children: "Bookly Agency n\u2019est ni employeur, ni donneur d\u2019ordre, ni co-contractant \xE0 l\u2019ex\xE9cution mat\xE9rielle de la prestation." }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "STAFFLY Agency n\u2019est ni employeur, ni donneur d\u2019ordre, ni co-contractant \xE0 l\u2019ex\xE9cution mat\xE9rielle de la prestation." }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 52,
           columnNumber: 13
@@ -275,7 +275,7 @@ function Cga() {
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV(Subsection, { title: "3.2 \u2014 Mandat d\u2019int\xE9r\xEAt commun", children: [
-        /* @__PURE__ */ jsxDEV("p", { children: "Le Prestataire reconna\xEEt et accepte express\xE9ment que Bookly Agency intervient en qualit\xE9 de mandataire d\u2019int\xE9r\xEAt commun, agissant au nom et pour le compte :" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "Le Prestataire reconna\xEEt et accepte express\xE9ment que STAFFLY Agency intervient en qualit\xE9 de mandataire d\u2019int\xE9r\xEAt commun, agissant au nom et pour le compte :" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 55,
           columnNumber: 13
@@ -343,7 +343,7 @@ function Cga() {
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV(Subsection, { title: "3.3 \u2014 Mandat d\u2019encaissement", children: [
-        /* @__PURE__ */ jsxDEV("p", { children: "Lorsque le mod\xE8le de fonctionnement le pr\xE9voit, le Prestataire confie \xE0 Bookly Agency un mandat expr\xE8s d\u2019encaissement, aux fins de :" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "Lorsque le mod\xE8le de fonctionnement le pr\xE9voit, le Prestataire confie \xE0 STAFFLY Agency un mandat expr\xE8s d\u2019encaissement, aux fins de :" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 63,
           columnNumber: 13
@@ -369,7 +369,7 @@ function Cga() {
           lineNumber: 64,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV("p", { children: "Les sommes encaiss\xE9es transitent pour le compte du Prestataire. Bookly Agency agit en qualit\xE9 de mandataire et non comme d\xE9biteur principal de la r\xE9mun\xE9ration." }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "Les sommes encaiss\xE9es transitent pour le compte du Prestataire. STAFFLY Agency agit en qualit\xE9 de mandataire et non comme d\xE9biteur principal de la r\xE9mun\xE9ration." }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 65,
           columnNumber: 13
@@ -426,7 +426,7 @@ function Cga() {
         lineNumber: 71,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV("p", { children: "Aucun lien de subordination juridique n\u2019existe entre Bookly Agency et le Prestataire." }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "Aucun lien de subordination juridique n\u2019existe entre STAFFLY Agency et le Prestataire." }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 72,
         columnNumber: 11
@@ -437,7 +437,7 @@ function Cga() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "Article 5 \u2014 Commission", children: [
-      /* @__PURE__ */ jsxDEV(Subsection, { title: "5.1 \u2014 Principe", children: /* @__PURE__ */ jsxDEV("p", { children: "En contrepartie des services d\u2019apport d\u2019affaires, de mise en relation et de coordination fournis par Bookly Agency, le Prestataire accepte le versement d\u2019une commission sur chaque mission r\xE9alis\xE9e via la plateforme." }, void 0, false, {
+      /* @__PURE__ */ jsxDEV(Subsection, { title: "5.1 \u2014 Principe", children: /* @__PURE__ */ jsxDEV("p", { children: "En contrepartie des services d\u2019apport d\u2019affaires, de mise en relation et de coordination fournis par STAFFLY Agency, le Prestataire accepte le versement d\u2019une commission sur chaque mission r\xE9alis\xE9e via la plateforme." }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 75,
         columnNumber: 46
@@ -500,7 +500,7 @@ function Cga() {
             lineNumber: 80,
             columnNumber: 88
           }, this),
-          /* @__PURE__ */ jsxDEV("li", { children: "d\xE8s lors que la mise en relation est intervenue par l\u2019interm\xE9diaire de Bookly Agency." }, void 0, false, {
+          /* @__PURE__ */ jsxDEV("li", { children: "d\xE8s lors que la mise en relation est intervenue par l\u2019interm\xE9diaire de STAFFLY Agency." }, void 0, false, {
             fileName: "<stdin>",
             lineNumber: 80,
             columnNumber: 169
@@ -510,7 +510,7 @@ function Cga() {
           lineNumber: 80,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV("p", { children: "Toute mission r\xE9alis\xE9e entre un Client et un Prestataire initialement mis en relation via la plateforme sera r\xE9put\xE9e conclue sous le mandat de Bookly Agency et donnera lieu au paiement de la commission." }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "Toute mission r\xE9alis\xE9e entre un Client et un Prestataire initialement mis en relation via la plateforme sera r\xE9put\xE9e conclue sous le mandat de STAFFLY Agency et donnera lieu au paiement de la commission." }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 81,
           columnNumber: 13
@@ -521,7 +521,7 @@ function Cga() {
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV(Subsection, { title: "5.4 \u2014 Compensation et retenue", children: [
-        /* @__PURE__ */ jsxDEV("p", { children: "En cas de paiement centralis\xE9, Bookly Agency est autoris\xE9e \xE0 :" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "En cas de paiement centralis\xE9, STAFFLY Agency est autoris\xE9e \xE0 :" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 84,
           columnNumber: 13
@@ -559,12 +559,12 @@ function Cga() {
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV(Bullets, { children: [
-        /* @__PURE__ */ jsxDEV("li", { children: "de contracter directement avec un Client rencontr\xE9 via Bookly Agency en dehors de la plateforme ;" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("li", { children: "de contracter directement avec un Client rencontr\xE9 via STAFFLY Agency en dehors de la plateforme ;" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 90,
           columnNumber: 20
         }, this),
-        /* @__PURE__ */ jsxDEV("li", { children: "d\u2019accepter ou d\u2019ex\xE9cuter une mission hors plateforme avec un Client pr\xE9sent\xE9 par Bookly Agency ;" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("li", { children: "d\u2019accepter ou d\u2019ex\xE9cuter une mission hors plateforme avec un Client pr\xE9sent\xE9 par STAFFLY Agency ;" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 90,
           columnNumber: 126
@@ -674,7 +674,7 @@ function Cga() {
         lineNumber: 101,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV("p", { children: "Il garantit Bookly Agency contre toute action, notamment :" }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "Il garantit STAFFLY Agency contre toute action, notamment :" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 102,
         columnNumber: 11
@@ -711,7 +711,7 @@ function Cga() {
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV(Section, { title: "Article 8 \u2014 R\xE9siliation", children: [
-      /* @__PURE__ */ jsxDEV("p", { children: "Bookly Agency pourra r\xE9silier ou suspendre imm\xE9diatement l\u2019acc\xE8s du Prestataire en cas de :" }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("p", { children: "STAFFLY Agency pourra r\xE9silier ou suspendre imm\xE9diatement l\u2019acc\xE8s du Prestataire en cas de :" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 107,
         columnNumber: 11
