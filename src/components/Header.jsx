@@ -4,11 +4,11 @@ import logo from '@/assets/staffly.svg';
 import '../../themes/duplicates/header-dup1.css';
 
 const NAV_LINKS = [
-  { label: 'Accueil',          href: '#hero',            section: 'hero'        },
-  { label: 'Prestations',      href: '#prestations',     section: 'prestations' },
-  { label: 'Fonctionnement',   href: '#steps',           section: 'steps'       },
-  { label: 'Services',         href: '#services',        section: 'services'    },
-  { label: 'Contact',          href: '#contact',         section: 'contact'     },
+  { label: 'Accueil',          href: '/#hero',            section: 'hero'        },
+  { label: 'Prestations',      href: '/#prestations',     section: 'prestations' },
+  { label: 'Fonctionnement',   href: '/#steps',           section: 'steps'       },
+  { label: 'Services',         href: '/#services',        section: 'services'    },
+  { label: 'Contact',          href: '/#contact',         section: 'contact'     },
 ];
 
 export default function Header() {

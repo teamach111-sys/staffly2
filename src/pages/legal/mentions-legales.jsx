@@ -282,7 +282,7 @@ function MentionsLegales() {
           lineNumber: 74,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV("p", { children: "Pour exercer vos droits : lesly@stafflyagency.com" }, void 0, false, {
+        /* @__PURE__ */ jsxDEV("p", { children: "Pour exercer vos droits : nelson@stafflyagency.com" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 75,
           columnNumber: 13

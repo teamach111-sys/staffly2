@@ -6,7 +6,7 @@ import Cgv from './pages/legal/cgv.jsx'
 import MentionsLegales from './pages/legal/mentions-legales.jsx'
 import PolitiqueDeCookies from './pages/legal/politique-de-cookies.jsx'
 import './pages/legal/styles.css'
-
+import Footer from './components/Footer.jsx'
 const legalPages = {
   '#/cga': Cga,
   '#/cgv': Cgv,
@@ -28,5 +28,5 @@ export default function App() {
   }, [hash])
 
   const LegalPage = legalPages[hash]
-  return LegalPage ? <><Header /><LegalPage /></> : <Home />
+  return LegalPage ? <><Header /><LegalPage /><Footer /></> : <Home />
 }
